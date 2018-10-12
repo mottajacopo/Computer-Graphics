@@ -15,7 +15,7 @@ namespace Example_lab
         public static Point WINDOWSOFFSET = new Point(100, 50);
         public static Point PIXELSXPOINT = new Point(40, 40); // quanti pixel voglio per ogni punto del labirinto
 
-        public static string LabyrinthPathName = @"C:\Git\WorkRepository\VisualStudio\Example_lab\Example_lab\Content\Labirinto.txt";
+        public static string LabyrinthPathName = @"C:\Git\Computer-Graphics\Example_lab\Example_lab\Content\Labirinto.txt";
 
         public static Texture2D brickBlack, brickGold, brickBlue, brickGreen;
     }

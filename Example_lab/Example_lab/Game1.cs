@@ -53,8 +53,12 @@ namespace Example_lab
             C.brickBlue = H.CreateTexure(GraphicsDevice, 1, 1, pixel => Color.Blue);
             C.brickGreen = H.CreateTexure(GraphicsDevice, 1, 1, pixel => Color.Green);
 
+            ReadLabyrinthSpec(V.labyrinthMatrix ,C.LabyrinthPathName);
 
+            V.hero = Content.Load<Texture2D>("hero");
+            V.heroDamaged = Content.Load<Texture2D>("hero_damage");
 
+            V.currentHeroPosition = V.labEnter[0];
         }
 
         /// <summary>
@@ -94,9 +98,13 @@ namespace Example_lab
             spriteBatch.Begin();
             ReadLabyrinthSpec(V.labyrinthMatrix, C.LabyrinthPathName);
             FillLabyrinth(spriteBatch);
+
+            spriteBatch.Draw(V.hero , new Rectangle(H.heroPosition() , C.PIXELSXPOINT) , Color.White); 
             spriteBatch.End();
 
             base.Draw(gameTime);
+
+            
         }
     }
 }

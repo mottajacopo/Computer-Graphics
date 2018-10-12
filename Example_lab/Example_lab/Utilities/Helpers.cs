@@ -32,6 +32,13 @@ namespace Example_lab
 
             return texture;
         }
+
+
+        public static Point heroPosition()
+        {
+            return (C.WINDOWSOFFSET + V.currentHeroPosition * C.PIXELSXPOINT);
+        }
         
     }
+
 }

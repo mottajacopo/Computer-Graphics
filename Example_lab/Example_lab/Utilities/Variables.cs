@@ -19,6 +19,14 @@ namespace Example_lab
 
         public static Rectangle labyrinthRect;
 
+        public static Texture2D hero;
+        public static Texture2D heroDamaged;
+
+        public static Point currentHeroPosition;
+
+        public static List<Point> labEnter = new List<Point>();
+        public static List<Point> labExit = new List<Point>();
+
 
     }
 }
