@@ -11,8 +11,8 @@ namespace Example_lab
 {
     public static class C // Constants
     {
-        public static Point MAINWINDOW = new Point(1200, 700);
-        public static Point WINDOWSOFFSET = new Point(100, 50);
+        public static Point MAINWINDOW = new Point(980, 720);
+        public static Point WINDOWSOFFSET = new Point(50, 40);
         public static Point PIXELSXPOINT = new Point(40, 40); // quanti pixel voglio per ogni punto del labirinto
 
         public static string LabyrinthPathName = @"C:\Git\Computer-Graphics\Example_lab\Example_lab\Content\Labirinto.txt";
