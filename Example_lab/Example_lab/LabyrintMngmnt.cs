@@ -46,6 +46,12 @@ namespace Example_lab
                         case '1' :
                             V.labyrinthMatrix[i, j] = '1';
                             break;
+                        case 'L':
+                            V.labyrinthMatrix[i, j] = 'L';
+                            break;
+                        case 'D':
+                            V.labyrinthMatrix[i, j] = 'D';
+                            break;
                         case 'I' :
                             V.labyrinthMatrix[i, j] = 'I';
                             V.labEnter.Add(new Point(j,i));
@@ -78,12 +84,15 @@ namespace Example_lab
                             break;
                         case 'I':
                             brick = C.brickBlue;
-                           
+                            break;
+                        case 'L':
+                            brick = C.brickLava;
+                            break;
+                        case 'D':
+                            brick = C.brickDiamante;
                             break;
                         case 'E':
                             brick = C.brickGreen;
-                            
-
                             break;
                     }
                     //disegno il labirinto

@@ -55,9 +55,15 @@ namespace Example_lab
             C.brickBlue = H.CreateTexure(GraphicsDevice, 1, 1, pixel => Color.Blue);
             C.brickGreen = H.CreateTexure(GraphicsDevice, 1, 1, pixel => Color.Green);
 
+            C.brickBlack = Content.Load<Texture2D>("mosst");
+            C.brickGold = Content.Load<Texture2D>("grass");
+            C.brickLava = Content.Load<Texture2D>("lava");
+            C.brickDiamante = Content.Load<Texture2D>("diamante2");
+
+
             ReadLabyrinthSpec(V.labyrinthMatrix ,C.LabyrinthPathName);
 
-            V.hero = Content.Load<Texture2D>("hero");
+            V.hero = Content.Load<Texture2D>("hero2");
             V.heroDamaged = Content.Load<Texture2D>("hero_damage");
 
             V.currentHeroPosition = V.labEnter[0];
