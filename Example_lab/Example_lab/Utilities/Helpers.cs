@@ -18,7 +18,7 @@ namespace Example_lab
 
         //devo creare i colori dei quadrati
 
-        public static Texture2D CreateTexure(GraphicsDevice device , int width, int height, Func<int , Color> paint) // restituisce un file di texture
+        public static Texture2D CreateTexure(GraphicsDevice device, int width, int height, Func<int, Color> paint) // restituisce un file di texture
         {
             Texture2D texture = new Texture2D(device, width, height); // creo  la textture
             Color[] data = new Color[width * height];  // array di colori
@@ -38,7 +38,7 @@ namespace Example_lab
         {
             return (C.WINDOWSOFFSET + V.currentHeroPosition * C.PIXELSXPOINT);
         }
-        
+
     }
 
 }

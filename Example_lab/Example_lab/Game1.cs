@@ -12,6 +12,8 @@ namespace Example_lab
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        private Point _position = new Point(0, 0);
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -77,10 +79,22 @@ namespace Example_lab
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
-
-            // TODO: Add your update logic here
+            if (Keyboard.GetState().IsKeyDown(Keys.W))
+            {
+                _position.Y -= 3 ;
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.S))
+            {
+                _position.Y += 3;
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.A))
+            {
+                _position.X -= 3;
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.D))
+            {
+                _position.X += 3;
+            }
 
             base.Update(gameTime);
         }
@@ -99,7 +113,7 @@ namespace Example_lab
             ReadLabyrinthSpec(V.labyrinthMatrix, C.LabyrinthPathName);
             FillLabyrinth(spriteBatch);
 
-            spriteBatch.Draw(V.hero , new Rectangle(H.heroPosition() , C.PIXELSXPOINT) , Color.White); 
+            spriteBatch.Draw(V.hero , new Rectangle(H.heroPosition() + _position, C.PIXELSXPOINT) , Color.White); 
             spriteBatch.End();
 
             base.Draw(gameTime);
