@@ -50,20 +50,21 @@ namespace Example_lab
             // TODO: use this.Content to load your game content here
             //carichiamo i contenuti
 
-            C.brickBlack = H.CreateTexure(GraphicsDevice, 1, 1, pixel => Color.Black);
-            C.brickGold = H.CreateTexure(GraphicsDevice, 1, 1, pixel => Color.Gold);
-            C.brickBlue = H.CreateTexure(GraphicsDevice, 1, 1, pixel => Color.Blue);
-            C.brickGreen = H.CreateTexure(GraphicsDevice, 1, 1, pixel => Color.Green);
+            //C.brickBlack = H.CreateTexure(GraphicsDevice, 1, 1, pixel => Color.Black);
+         
 
-            C.brickBlack = Content.Load<Texture2D>("mosst");
-            C.brickGold = Content.Load<Texture2D>("grass");
+            C.brickWall = Content.Load<Texture2D>("mossy");
+            C.brickGrass = Content.Load<Texture2D>("grass");
             C.brickLava = Content.Load<Texture2D>("lava");
-            C.brickDiamante = Content.Load<Texture2D>("diamante2");
+            C.brickDiamond = Content.Load<Texture2D>("diamante2");
+            C.brickStart = Content.Load<Texture2D>("grass");
+            C.brickEnd = Content.Load<Texture2D>("door");
+            C.brickEnd2 = Content.Load<Texture2D>("door2");
 
 
             ReadLabyrinthSpec(V.labyrinthMatrix ,C.LabyrinthPathName);
 
-            V.hero = Content.Load<Texture2D>("hero2");
+            V.hero = Content.Load<Texture2D>("hero");
             V.heroDamaged = Content.Load<Texture2D>("hero_damage");
 
             V.currentHeroPosition = V.labEnter[0];
@@ -85,6 +86,11 @@ namespace Example_lab
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            KeyboardState state = Keyboard.GetState();
+            // If they hit esc, exit
+            if (state.IsKeyDown(Keys.Escape))
+                Exit();
+
             if (Keyboard.GetState().IsKeyDown(Keys.W))
             {
                 _position.Y -= 3 ;

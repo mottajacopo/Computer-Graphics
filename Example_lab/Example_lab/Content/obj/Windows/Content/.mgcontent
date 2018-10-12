@@ -4,15 +4,23 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Git/Computer-Graphics/Example_lab/Example_lab/Content/diamante.png</File>
     <File>C:/Git/Computer-Graphics/Example_lab/Example_lab/Content/diamante2.png</File>
+    <File>C:/Git/Computer-Graphics/Example_lab/Example_lab/Content/door.png</File>
+    <File>C:/Git/Computer-Graphics/Example_lab/Example_lab/Content/door2.png</File>
     <File>C:/Git/Computer-Graphics/Example_lab/Example_lab/Content/grass.png</File>
+    <File>C:/Git/Computer-Graphics/Example_lab/Example_lab/Content/heart.png</File>
     <File>C:/Git/Computer-Graphics/Example_lab/Example_lab/Content/hero.png</File>
     <File>C:/Git/Computer-Graphics/Example_lab/Example_lab/Content/hero_damage.png</File>
-    <File>C:/Git/Computer-Graphics/Example_lab/Example_lab/Content/hero2.png</File>
     <File>C:/Git/Computer-Graphics/Example_lab/Example_lab/Content/lava.jpg</File>
-    <File>C:/Git/Computer-Graphics/Example_lab/Example_lab/Content/mosst.png</File>
+    <File>C:/Git/Computer-Graphics/Example_lab/Example_lab/Content/mossy.png</File>
+    <File>C:/Git/Computer-Graphics/Example_lab/Example_lab/Content/wood.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

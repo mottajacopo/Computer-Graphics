@@ -52,6 +52,9 @@ namespace Example_lab
                         case 'D':
                             V.labyrinthMatrix[i, j] = 'D';
                             break;
+                        case 'F':
+                            V.labyrinthMatrix[i, j] = 'F';
+                            break;
                         case 'I' :
                             V.labyrinthMatrix[i, j] = 'I';
                             V.labEnter.Add(new Point(j,i));
@@ -67,7 +70,7 @@ namespace Example_lab
 
         public void FillLabyrinth(SpriteBatch sp)
         {
-            Texture2D brick = C.brickGold; // lo uso come brick defauld
+            Texture2D brick = C.brickGrass; // lo uso come brick defauld
 
             for (int i = 0; i < V.labyrinthMatrixRows; i++)
             {
@@ -77,22 +80,25 @@ namespace Example_lab
                     switch (V.labyrinthMatrix[i, j])
                     {
                         case '0':
-                            brick = C.brickGold;
+                            brick = C.brickGrass;
                             break;
                         case '1':
-                            brick = C.brickBlack;
+                            brick = C.brickWall;
                             break;
                         case 'I':
-                            brick = C.brickBlue;
+                            brick = C.brickStart;
                             break;
                         case 'L':
                             brick = C.brickLava;
                             break;
+                        case 'F':
+                            brick = C.brickEnd2;
+                            break;
                         case 'D':
-                            brick = C.brickDiamante;
+                            brick = C.brickDiamond;
                             break;
                         case 'E':
-                            brick = C.brickGreen;
+                            brick = C.brickEnd;
                             break;
                     }
                     //disegno il labirinto

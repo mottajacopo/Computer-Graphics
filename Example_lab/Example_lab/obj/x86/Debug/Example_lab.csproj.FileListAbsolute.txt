@@ -46,7 +46,13 @@ C:\Git\Computer-Graphics\Example_lab\Example_lab\obj\x86\Debug\Example_lab.pdb
 C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\hero.xnb
 C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\hero_damage.xnb
 C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\grass.xnb
-C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\mosst.xnb
-C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\hero2.xnb
 C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\lava.xnb
 C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\diamante2.xnb
+C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\diamante.xnb
+C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\heart.xnb
+C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\mossy.xnb
+C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\finish.xnb
+C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\finish2.xnb
+C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\wood.xnb
+C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\door.xnb
+C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\door2.xnb

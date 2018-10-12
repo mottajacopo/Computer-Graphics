@@ -17,6 +17,6 @@ namespace Example_lab
 
         public static string LabyrinthPathName = @"C:\Git\Computer-Graphics\Example_lab\Example_lab\Content\Labirinto.txt";
 
-        public static Texture2D brickBlack, brickGold, brickBlue, brickGreen, brickLava , brickDiamante;
+        public static Texture2D brickWall, brickGrass, brickStart, brickEnd, brickLava , brickDiamond , brickEnd2;
     }
 }
