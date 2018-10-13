@@ -38,9 +38,7 @@ C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\SharpDX.D
 C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
 C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
 C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\SharpDX.XInput.xml
-C:\Git\Computer-Graphics\Example_lab\Example_lab\obj\x86\Debug\Example_lab.csprojAssemblyReference.cache
 C:\Git\Computer-Graphics\Example_lab\Example_lab\obj\x86\Debug\Example_lab.csproj.CoreCompileInputs.cache
-C:\Git\Computer-Graphics\Example_lab\Example_lab\obj\x86\Debug\Example_lab.csproj.CopyComplete
 C:\Git\Computer-Graphics\Example_lab\Example_lab\obj\x86\Debug\Example_lab.exe
 C:\Git\Computer-Graphics\Example_lab\Example_lab\obj\x86\Debug\Example_lab.pdb
 C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\hero.xnb
@@ -56,3 +54,4 @@ C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\f
 C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\wood.xnb
 C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\door.xnb
 C:\Git\Computer-Graphics\Example_lab\Example_lab\bin\Windows\x86\Debug\Content\door2.xnb
+C:\Git\Computer-Graphics\Example_lab\Example_lab\obj\x86\Debug\Example_lab.csprojResolveAssemblyReference.cache
