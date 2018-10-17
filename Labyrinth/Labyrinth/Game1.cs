@@ -9,15 +9,14 @@ using Labyrinth.Manager;
 
 namespace Labyrinth
 {
-  /// <summary>
-  /// This is the main type for your game.
-  /// </summary>
+
   public partial class Game1 : Game
   {
     GraphicsDeviceManager graphics;
     SpriteBatch spriteBatch;
 
     public List<Sprite> _sprites;
+    public List<Map> _map = new List<Map>();
 
     public Game1()
     {
@@ -25,31 +24,22 @@ namespace Labyrinth
       Content.RootDirectory = "Content";
     }
 
-    /// <summary>
-    /// Allows the game to perform any initialization it needs to before starting to run.
-    /// This is where it can query for any required services and load any non-graphic
-    /// related content.  Calling base.Initialize will enumerate through any components
-    /// and initialize them as well.
-    /// </summary>
+  
     protected override void Initialize()
     {
-            // TODO: Add your initialization logic here
-            graphics.PreferredBackBufferWidth = C.MAINWINDOW.X;   /// definisco la larghezza della finestra esterna
-            graphics.PreferredBackBufferHeight = C.MAINWINDOW.Y;
+            
+      graphics.PreferredBackBufferWidth = C.MAINWINDOW.X;  
+      graphics.PreferredBackBufferHeight = C.MAINWINDOW.Y;
 
-            graphics.ApplyChanges();
+      graphics.ApplyChanges();
 
 
-            base.Initialize();
+      base.Initialize();
     }
 
-    /// <summary>
-    /// LoadContent will be called once per game and is the place to load
-    /// all of your content.
-    /// </summary>
     protected override void LoadContent()
     {
-      // Create a new SpriteBatch, which can be used to draw textures.
+     
       spriteBatch = new SpriteBatch(GraphicsDevice);
 
       C.brickWall = Content.Load<Texture2D>("mossy");
@@ -62,10 +52,12 @@ namespace Labyrinth
 
 
       ReadLabyrinthSpec(V.labyrinthMatrix, C.LabyrinthPathName);
+      _map = FillLabyrinth(spriteBatch, _map);
       V.currentHeroPosition = V.labEnter[0];
 
       var playerTexture = Content.Load<Texture2D>("Hero");
-            var animations = new Dictionary<string, Animation>()
+
+      var animations = new Dictionary<string, Animation>()
       {
             { "WalkRight", new Animation(Content.Load<Texture2D>("Player/ZeldaRight"), 3) },
             { "WalkUp", new Animation(Content.Load<Texture2D>("Player/ZeldaUp"), 3) },
@@ -81,10 +73,11 @@ namespace Labyrinth
             { "WalkUp", new Animation(Content.Load<Texture2D>("Player/ZeldaUp"), 3) },
             { "WalkDown", new Animation(Content.Load<Texture2D>("Player/ZeldaDown"), 3) },
             { "WalkLeft", new Animation(Content.Load<Texture2D>("Player/ZeldaLeft"), 3) },
-          
+
         })
         {
-          Position = H.ToVector2(H.heroPosition()),
+          //Position = H.ToVector2(H.HeroPosition()),
+          Position = new Vector2(180,300),
           Input = new Input()
           {
             Up = Keys.W,
@@ -95,48 +88,41 @@ namespace Labyrinth
         },
         
       };
-        }
-
-    /// <summary>
-    /// UnloadContent will be called once per game and is the place to unload
-    /// game-specific content.
-    /// </summary>
-    protected override void UnloadContent()
-    {
-      // TODO: Unload any non ContentManager content here
     }
 
-    /// <summary>
-    /// Allows the game to run logic such as updating the world,
-    /// checking for collisions, gathering input, and playing audio.
-    /// </summary>
-    /// <param name="gameTime">Provides a snapshot of timing values.</param>
+  
+    protected override void UnloadContent()
+    {
+
+    }
+
+ 
     protected override void Update(GameTime gameTime)
     {
-      foreach (var sprite in _sprites)
-        sprite.Update(gameTime, _sprites);
+            foreach (var sprite in _sprites)
+            {
+                sprite.Update(gameTime, _sprites , _map);
+            }
 
       base.Update(gameTime);
     }
 
-    /// <summary>
-    /// This is called when the game should draw itself.
-    /// </summary>
-    /// <param name="gameTime">Provides a snapshot of timing values.</param>
     protected override void Draw(GameTime gameTime)
     {
       GraphicsDevice.Clear(Color.CornflowerBlue);
 
       spriteBatch.Begin();
 
-      ReadLabyrinthSpec(V.labyrinthMatrix, C.LabyrinthPathName);
-      FillLabyrinth(spriteBatch , _sprites);
+      //ReadLabyrinthSpec(V.labyrinthMatrix, C.LabyrinthPathName);
+      //FillLabyrinth(spriteBatch , _map);
+
+      foreach (var map in _map)
+        map.Draw(spriteBatch);
 
       foreach (var sprite in _sprites)
         sprite.Draw(spriteBatch);
-       
 
-      spriteBatch.End();
+            spriteBatch.End();
 
       base.Draw(gameTime);
     }

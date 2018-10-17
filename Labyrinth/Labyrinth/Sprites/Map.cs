@@ -15,15 +15,45 @@ namespace Labyrinth.Sprites
     public class Map
     {
         protected Texture2D _texture;
+        public char _id;
 
-        public Point Position;
-        public Point Size;
+        protected Vector2 _position;
         public Color Colour = Color.White;
-       
 
-        public Map(Texture2D texture)
+
+
+        public Rectangle Rectangle
+        {
+            get
+            {
+                return new Rectangle((int)Position.X, (int)Position.Y, 40, 40);
+            }
+        }
+
+        public Map(Texture2D texture )
         {
             _texture = texture;
+            
+        }
+
+        public Vector2 Position
+        {
+            get { return _position; }
+            set
+            {
+                _position = value;
+
+            }
+        }
+
+        public char ID
+        {
+            get { return _id; }
+            set
+            {
+                _id = value;
+
+            }
         }
 
         public virtual void Update(GameTime gameTime, List<Sprite> sprites)
@@ -33,7 +63,7 @@ namespace Labyrinth.Sprites
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(_texture, new Rectangle(Position , Size), Colour);
+            spriteBatch.Draw(_texture, new Rectangle((int)Position.X, (int)Position.Y, 40, 40), Colour);
             
         }
     }

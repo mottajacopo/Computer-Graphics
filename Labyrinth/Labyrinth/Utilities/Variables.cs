@@ -23,6 +23,7 @@ namespace Labyrinth
         public static Texture2D heroDamaged;
 
         public static Point currentHeroPosition;
+        public static Point currentBrickPosition;
 
         public static List<Point> labEnter = new List<Point>();
         public static List<Point> labExit = new List<Point>();

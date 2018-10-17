@@ -71,63 +71,90 @@ namespace Labyrinth
             }
         }
 
-        public void FillLabyrinth(SpriteBatch sp , List<Sprite> _sprites)
+        public List<Map> FillLabyrinth(SpriteBatch sp , List<Map> _map)
         {
             Texture2D brick = C.brickGrass; // lo uso come brick defauld
+           
 
             for (int i = 0; i < V.labyrinthMatrixRows; i++)
             {
 
                 for (int j = 0; j < V.labyrinthMatrixColumns; j++)
                 {
+                    V.currentBrickPosition = new Point(j, i);
                     switch (V.labyrinthMatrix[i, j])
                     {
                         case '0':
                             brick = C.brickGrass;
-
+                            
+                            _map.Add(new Map(brick)
+                            {
+                                Position = H.ToVector2(H.BrickPosition()),
+                                ID = '0',
+                            });
                             break;
                         case '1':
                             brick = C.brickWall;
-                            /*
-                            _sprites.Add(new Sprite(brick)
+                            
+
+                            _map.Add(new Map(brick)
                             {
-                                Position = H.ToVector2(new Point (j,i)),
-                                Input = new Input()
-                                {
-                                    Up = Keys.I,
-                                    Down = Keys.O,
-                                    Left = Keys.H,
-                                    Right = Keys.K,
-                                },
-                                
+                                Position = H.ToVector2(H.BrickPosition()),
+                                ID = '1',
                             });
-                            */
+                            
                             break;
                         case 'I':
                             brick = C.brickStart;
                             
+                            _map.Add(new Map(brick)
+                            {
+                                Position = H.ToVector2(H.BrickPosition()),
+                                ID = 'I',
+                            });
                             break;
                         case 'L':
                             brick = C.brickLava;
                             
+                            _map.Add(new Map(brick)
+                            {
+                                Position = H.ToVector2(H.BrickPosition()),
+                                ID = 'L',
+                            });
                             break;
                         case 'F':
                             brick = C.brickEnd2;
                             
+                            _map.Add(new Map(brick)
+                            {
+                                Position = H.ToVector2(H.BrickPosition()),
+                                ID = 'F',
+                            });
                             break;
                         case 'D':
                             brick = C.brickDiamond;
                             
+                            _map.Add(new Map(brick)
+                            {
+                                Position = H.ToVector2(H.BrickPosition()),
+                                ID = 'D',
+                            });
                             break;
                         case 'E':
                             brick = C.brickEnd;
                             
+                            _map.Add(new Map(brick)
+                            {
+                                Position = H.ToVector2(H.BrickPosition()),
+                                ID = 'E',
+                            });
                             break;
                     }
                     //disegno il labirinto
-                    sp.Draw(brick, new Rectangle(H.PointToPixel(new Point(j, i)), C.PIXELSXPOINT), Color.White);
+                    //sp.Draw(brick, new Rectangle(H.PointToPixel(new Point(j, i)), C.PIXELSXPOINT), Color.White);
                 }
             }
+            return _map;
         }
     }
 }

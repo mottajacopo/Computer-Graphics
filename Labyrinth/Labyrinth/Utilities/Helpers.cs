@@ -34,10 +34,16 @@ namespace Labyrinth
         }
 
 
-        public static Point heroPosition()
+        public static Point HeroPosition()
         {
             return (C.WINDOWSOFFSET + V.currentHeroPosition * C.PIXELSXPOINT);
         }
+
+        public static Point BrickPosition()
+        {
+            return (C.WINDOWSOFFSET + V.currentBrickPosition * C.PIXELSXPOINT);
+        }
+
 
         public static Vector2 ToVector2(this Point point)
         {
