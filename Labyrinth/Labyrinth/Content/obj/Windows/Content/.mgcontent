@@ -4,25 +4,25 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/diamante.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/diamante2.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/door.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/door2.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/grass.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/heart.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/hero.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/hero_damage.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/lava.jpg</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/mossy.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/Player/WalkingDown.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/Player/WalkingLeft.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/Player/WalkingRight.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/Player/WalkingUp.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/Player/ZeldaDown.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/Player/ZeldaLeft.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/Player/ZeldaRight.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/Player/ZeldaUp.png</File>
-    <File>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/wood.jpg</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/diamante.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/diamante2.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/door.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/door2.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/grass.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/heart.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/hero.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/hero_damage.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/lava.jpg</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/mossy.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/WalkingDown.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/WalkingLeft.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/WalkingRight.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/WalkingUp.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaDown.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaLeft.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaRight.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaUp.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/wood.jpg</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

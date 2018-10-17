@@ -15,7 +15,7 @@ namespace Labyrinth
     GraphicsDeviceManager graphics;
     SpriteBatch spriteBatch;
 
-    public List<Sprite> _sprites;
+    public List<Player> _player;
     public List<Map> _map = new List<Map>();
 
     public Game1()
@@ -65,9 +65,9 @@ namespace Labyrinth
             { "WalkLeft", new Animation(Content.Load<Texture2D>("Player/ZeldaLeft"), 3) },
       };
 
-            _sprites = new List<Sprite>()
+       _player = new List<Player>()
       {
-        new Sprite(new Dictionary<string, Animation>()
+        new Player(new Dictionary<string, Animation>()
         {
             { "WalkRight", new Animation(Content.Load<Texture2D>("Player/ZeldaRight"), 3) },
             { "WalkUp", new Animation(Content.Load<Texture2D>("Player/ZeldaUp"), 3) },
@@ -85,7 +85,7 @@ namespace Labyrinth
             Left = Keys.A,
             Right = Keys.D,
           },
-        },
+        }, 
         
       };
     }
@@ -99,9 +99,9 @@ namespace Labyrinth
  
     protected override void Update(GameTime gameTime)
     {
-            foreach (var sprite in _sprites)
+            foreach (var sprite in _player)
             {
-                sprite.Update(gameTime, _sprites , _map);
+                sprite.Update(gameTime, _player, _map);
             }
 
       base.Update(gameTime);
@@ -119,7 +119,7 @@ namespace Labyrinth
       foreach (var map in _map)
         map.Draw(spriteBatch);
 
-      foreach (var sprite in _sprites)
+      foreach (var sprite in _player)
         sprite.Draw(spriteBatch);
 
             spriteBatch.End();

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/Player/WalkingUp.png</SourceFile>
-  <SourceTime>2018-10-17T18:16:16.4728973+02:00</SourceTime>
-  <DestFile>C:/Git/WorkRepository/Labyrinth/Labyrinth/Content/bin/Windows/Content/Player/WalkingUp.xnb</DestFile>
-  <DestTime>2018-10-17T18:17:24.4457657+02:00</DestTime>
+  <SourceFile>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/WalkingUp.png</SourceFile>
+  <SourceTime>2018-10-17T22:11:44.750649+02:00</SourceTime>
+  <DestFile>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/Content/Player/WalkingUp.xnb</DestFile>
+  <DestTime>2018-10-17T22:12:44.6709676+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-09-23T23:55:52+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

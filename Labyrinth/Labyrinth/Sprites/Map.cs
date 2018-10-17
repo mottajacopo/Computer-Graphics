@@ -12,38 +12,17 @@ using Labyrinth.Manager;
 
 namespace Labyrinth.Sprites
 {
-    public class Map
+    public class Map : Sprite
     {
-        protected Texture2D _texture;
-        public char _id;
 
-        protected Vector2 _position;
+        public char _id;
         public Color Colour = Color.White;
 
-
-
-        public Rectangle Rectangle
-        {
-            get
-            {
-                return new Rectangle((int)Position.X, (int)Position.Y, 40, 40);
-            }
-        }
-
-        public Map(Texture2D texture )
+        public Map(Texture2D texture)
+            : base(texture)
         {
             _texture = texture;
             
-        }
-
-        public Vector2 Position
-        {
-            get { return _position; }
-            set
-            {
-                _position = value;
-
-            }
         }
 
         public char ID
