@@ -14,15 +14,13 @@ namespace Labyrinth.Sprites
 {
     public class Map : Sprite
     {
-
         public char _id;
         public Color Colour = Color.White;
 
         public Map(Texture2D texture)
             : base(texture)
         {
-            _texture = texture;
-            
+            _texture = texture;           
         }
 
         public char ID

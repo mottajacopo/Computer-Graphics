@@ -18,8 +18,7 @@ namespace Labyrinth.Sprites
 
         protected AnimationManager _animationManager;
         protected Dictionary<string, Animation> _animations;
-
-
+        
         #endregion
 
         #region Properties
@@ -92,8 +91,6 @@ namespace Labyrinth.Sprites
             _animationManager = new AnimationManager(_animations.First().Value);
         }
 
-
-
         public void Update(GameTime gameTime, List<Player> player, List<Map> _map)
         {
             Move();
@@ -151,6 +148,7 @@ namespace Labyrinth.Sprites
               this.Rectangle.Right > map.Rectangle.Left &&
               this.Rectangle.Left < map.Rectangle.Right;
         }
+
         #endregion
     }
 }

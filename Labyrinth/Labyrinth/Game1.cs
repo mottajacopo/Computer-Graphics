@@ -55,8 +55,6 @@ namespace Labyrinth
       _map = FillLabyrinth(spriteBatch, _map);
       V.currentHeroPosition = V.labEnter[0];
 
-      var playerTexture = Content.Load<Texture2D>("Hero");
-
       var animations = new Dictionary<string, Animation>()
       {
             { "WalkRight", new Animation(Content.Load<Texture2D>("Player/ZeldaRight"), 3) },
@@ -76,8 +74,7 @@ namespace Labyrinth
 
         })
         {
-          //Position = H.ToVector2(H.HeroPosition()),
-          Position = new Vector2(180,300),
+          Position = H.ToVector2(H.HeroPosition()),   
           Input = new Input()
           {
             Up = Keys.W,
@@ -89,20 +86,18 @@ namespace Labyrinth
         
       };
     }
-
-  
+        
     protected override void UnloadContent()
     {
 
     }
-
- 
+        
     protected override void Update(GameTime gameTime)
     {
-            foreach (var sprite in _player)
-            {
-                sprite.Update(gameTime, _player, _map);
-            }
+        foreach (var sprite in _player)
+        {
+            sprite.Update(gameTime, _player, _map);
+        }
 
       base.Update(gameTime);
     }
