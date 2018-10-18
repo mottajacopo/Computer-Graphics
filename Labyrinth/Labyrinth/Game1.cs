@@ -18,12 +18,13 @@ namespace Labyrinth
         public List<Player> _player;
         public List<Map> _map = new List<Map>();
         public Dictionary<string, Animation> animations;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
-
+        
 
         protected override void Initialize()
         {
@@ -77,6 +78,7 @@ namespace Labyrinth
                 new Player(animations)
                 {
                     Position = H.ToVector2(H.HeroPosition()),
+                    Health = 10,
                     Input = new Input()
                     {
                     Up = Keys.W,
@@ -85,7 +87,6 @@ namespace Labyrinth
                     Right = Keys.D,
                     },
                 },
-
             };
         }
 
@@ -94,11 +95,37 @@ namespace Labyrinth
 
         }
 
+        private void Restart()
+        {
+            _player = new List<Player>()
+            {
+                new Player(animations)
+                {
+                    Position = H.ToVector2(H.HeroPosition()),
+                    Health = 10,
+                    Input = new Input()
+                    {
+                    Up = Keys.W,
+                    Down = Keys.S,
+                    Left = Keys.A,
+                    Right = Keys.D,
+                    },
+                },
+            };
+        }
+
         protected override void Update(GameTime gameTime)
         {
             foreach (var sprite in _player)
             {
                 sprite.Update(gameTime, _player, _map);
+
+                
+                if(sprite.hasDied)
+                {
+                    Restart();
+                }
+                
             }
 
             base.Update(gameTime);
@@ -109,9 +136,6 @@ namespace Labyrinth
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
-
-            //ReadLabyrinthSpec(V.labyrinthMatrix, C.LabyrinthPathName);
-            //FillLabyrinth(spriteBatch , _map);
 
             foreach (var map in _map)
                 map.Draw(spriteBatch);

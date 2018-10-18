@@ -19,8 +19,6 @@ namespace Labyrinth
 
         public static Rectangle labyrinthRect;
 
-        public static Texture2D hero;
-        public static Texture2D heroDamaged;
 
         public static Point currentHeroPosition;
         public static Point currentBrickPosition;

@@ -19,6 +19,10 @@ namespace Labyrinth.Sprites
         protected AnimationManager _animationManager;
         protected Dictionary<string, Animation> _animations;
         protected int offset = 8;
+        public bool hasDied = false;
+        protected float _health;
+        
+
         #endregion
 
         #region Properties
@@ -34,6 +38,15 @@ namespace Labyrinth.Sprites
 
                 if (_animationManager != null)
                     _animationManager.Position = _position;
+            }
+        }
+
+        public float Health
+        {
+            get { return _health; }
+            set
+            {
+                _health = value;
             }
         }
 
@@ -92,6 +105,8 @@ namespace Labyrinth.Sprites
 
         public void Update(GameTime gameTime, List<Player> player, List<Map> _map)
         {
+            float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
+
             Move();
 
             foreach (var map in _map)
@@ -115,6 +130,16 @@ namespace Labyrinth.Sprites
                         V.animationUp = "WalkUpRed";
                         V.animationLeft = "WalkLeftRed";
                         V.animationRight = "WalkRightRed";
+
+                        if(Health > 0)
+                        {
+                            Health = Math.Max(0f,Health-deltaTime);
+                        }
+                        else
+                        {
+                            this.hasDied = true;
+                            deltaTime = 0;
+                        }
                     }
                 }
 
@@ -135,7 +160,11 @@ namespace Labyrinth.Sprites
             _animationManager.Update(gameTime);
 
             Position += Velocity;
+            _position.X = MathHelper.Clamp(Position.X, 0, C.MAINWINDOW.X - Rectangle.Width);
+            _position.Y = MathHelper.Clamp(Position.Y, 0, C.MAINWINDOW.Y - Rectangle.Height);
+
             Velocity = Vector2.Zero;
+            
         }
 
         public bool IsTouchingLeft(Map map)
