@@ -159,7 +159,9 @@ namespace Labyrinth.Sprites
 
             _animationManager.Update(gameTime);
 
-            Position += Velocity;
+            Position += 2* Velocity;
+
+            // keep the player in the map limitation
             _position.X = MathHelper.Clamp(Position.X, 0, C.MAINWINDOW.X - Rectangle.Width);
             _position.Y = MathHelper.Clamp(Position.Y, 0, C.MAINWINDOW.Y - Rectangle.Height);
 

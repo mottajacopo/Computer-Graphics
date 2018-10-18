@@ -13,7 +13,7 @@ namespace Labyrinth
     {
         public static Point PointToPixel(Point point)  // quanto è largo e alto è il rettangolo che contiene il labirinto
         {
-            return point * C.PIXELSXPOINT + C.WINDOWSOFFSET;
+            return point * C.PIXELSXPOINT;
         }
 
         //devo creare i colori dei quadrati
@@ -36,12 +36,12 @@ namespace Labyrinth
 
         public static Point HeroPosition()
         {
-            return (C.WINDOWSOFFSET + V.currentHeroPosition * C.PIXELSXPOINT);
+            return (V.currentHeroPosition * C.PIXELSXPOINT);
         }
 
         public static Point BrickPosition()
         {
-            return (C.WINDOWSOFFSET + V.currentBrickPosition * C.PIXELSXPOINT);
+            return (V.currentBrickPosition * C.PIXELSXPOINT);
         }
         
         public static Vector2 ToVector2(this Point point)
