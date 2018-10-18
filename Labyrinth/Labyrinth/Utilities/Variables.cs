@@ -31,6 +31,8 @@ namespace Labyrinth
         public static string animationLeft;
         public static string animationRight;
 
+        public static int score;
+        
 
     }
 }

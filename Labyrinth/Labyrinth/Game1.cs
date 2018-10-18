@@ -15,9 +15,11 @@ namespace Labyrinth
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        public List<Player> _player;
-        public List<Map> _map = new List<Map>();
-        public Dictionary<string, Animation> animations;
+        private List<Player> _player;
+        private List<Map> _map = new List<Map>();
+        private Dictionary<string, Animation> animations;
+        private float timer;
+        private SpriteFont font; 
 
         public Game1()
         {
@@ -88,6 +90,8 @@ namespace Labyrinth
                     },
                 },
             };
+
+            font = Content.Load<SpriteFont>("Fonts/Font");
         }
 
         protected override void UnloadContent()
@@ -116,6 +120,8 @@ namespace Labyrinth
 
         protected override void Update(GameTime gameTime)
         {
+            timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+
             foreach (var sprite in _player)
             {
                 sprite.Update(gameTime, _player, _map);
@@ -126,6 +132,11 @@ namespace Labyrinth
                     Restart();
                 }
                 
+            }
+
+            if (timer > 1)
+            {
+                // do something
             }
 
             base.Update(gameTime);
@@ -142,6 +153,9 @@ namespace Labyrinth
 
             foreach (var sprite in _player)
                 sprite.Draw(spriteBatch);
+
+            spriteBatch.DrawString(font, string.Format("Time: {0}", timer), new Vector2(10, 5), Color.White);
+            spriteBatch.DrawString(font, string.Format("Score: {0}", V.score), new Vector2(10, 35), Color.White);
 
             spriteBatch.End();
 

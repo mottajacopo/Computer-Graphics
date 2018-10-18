@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/door.png</SourceFile>
-  <SourceTime>2018-10-17T22:11:44.7918207+02:00</SourceTime>
+  <SourceTime>2018-10-18T20:03:39.9958704+02:00</SourceTime>
   <DestFile>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/door.xnb</DestFile>
-  <DestTime>2018-10-18T17:23:31.6395985+02:00</DestTime>
+  <DestTime>2018-10-18T21:11:27.9057026+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-09-23T23:55:52+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

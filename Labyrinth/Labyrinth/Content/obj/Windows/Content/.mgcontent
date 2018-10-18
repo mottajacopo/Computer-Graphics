@@ -16,6 +16,7 @@
     <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/diamante2.png</File>
     <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/door.png</File>
     <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/door2.png</File>
+    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Fonts/Font.spritefont</File>
     <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/grass.png</File>
     <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/heart.png</File>
     <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/lava.jpg</File>
@@ -31,6 +32,7 @@
     <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/wood.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

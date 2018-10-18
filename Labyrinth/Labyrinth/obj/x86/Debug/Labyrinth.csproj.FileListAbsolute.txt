@@ -136,3 +136,4 @@ D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphic
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon6.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon7.30.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon9.xnb
+D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Fonts\Font.xnb

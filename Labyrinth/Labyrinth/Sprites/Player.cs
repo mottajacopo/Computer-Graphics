@@ -69,13 +69,25 @@ namespace Labyrinth.Sprites
         public virtual void Move()
         {
             if (Keyboard.GetState().IsKeyDown(Input.Up))
+            {
                 Velocity.Y = -Speed;
+                V.score++;
+            }
             else if (Keyboard.GetState().IsKeyDown(Input.Down))
+            {
                 Velocity.Y = Speed;
+                V.score++;
+            }
             else if (Keyboard.GetState().IsKeyDown(Input.Left))
+            {
                 Velocity.X = -Speed;
+                V.score++;
+            }
             else if (Keyboard.GetState().IsKeyDown(Input.Right))
+            {
                 Velocity.X = Speed;
+                V.score ++;
+            }
         }
 
         protected virtual void SetAnimations(string up, string down, string left, string right)
@@ -134,14 +146,18 @@ namespace Labyrinth.Sprites
                         if(Health > 0)
                         {
                             Health = Math.Max(0f,Health-deltaTime);
+                            V.score += 15;
                         }
                         else
                         {
                             this.hasDied = true;
                             deltaTime = 0;
+                            V.score += 50;
                         }
                     }
                 }
+
+
 
                 if (map.ID == '0')
                 {
