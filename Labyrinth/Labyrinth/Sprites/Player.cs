@@ -18,7 +18,7 @@ namespace Labyrinth.Sprites
 
         protected AnimationManager _animationManager;
         protected Dictionary<string, Animation> _animations;
-        
+        protected int offset = 8;
         #endregion
 
         #region Properties
@@ -44,7 +44,7 @@ namespace Labyrinth.Sprites
 
         #region Methods
 
-        public void Draw(SpriteBatch spriteBatch)
+        public override void Draw(SpriteBatch spriteBatch)
         {
             if (_texture != null)
                 spriteBatch.Draw(_texture, new Rectangle((int)Position.X, (int)Position.Y, 40, 40), Color.White);
@@ -65,23 +65,22 @@ namespace Labyrinth.Sprites
                 Velocity.X = Speed;
         }
 
-        protected virtual void SetAnimations()
+        protected virtual void SetAnimations(string up, string down, string left, string right)
         {
             if (Velocity.X > 0)
-                _animationManager.Play(_animations["WalkRight"]);
+                _animationManager.Play(_animations[right]);
             else if (Velocity.X < 0)
-                _animationManager.Play(_animations["WalkLeft"]);
+                _animationManager.Play(_animations[left]);
             else if (Velocity.Y > 0)
-                _animationManager.Play(_animations["WalkDown"]);
+                _animationManager.Play(_animations[down]);
             else if (Velocity.Y < 0)
-                _animationManager.Play(_animations["WalkUp"]);
+                _animationManager.Play(_animations[up]);
             else _animationManager.Stop();
         }
 
         public Player(Texture2D texture)
             : base(texture)
         {
-
         }
 
         public Player(Dictionary<string, Animation> animations)
@@ -99,17 +98,39 @@ namespace Labyrinth.Sprites
             {
                 if (map.ID == '1')
                 {
-                    if ((this.Velocity.X >= 0 && IsTouchingLeft(map)) ||
-                        (this.Velocity.X <= 0 && IsTouchingRight(map)))
+                    if (this.Velocity.X >= 0 && IsTouchingLeft(map) ||
+                       (this.Velocity.X <= 0 && IsTouchingRight(map)))
                         this.Velocity.X = 0;
 
-                    if ((this.Velocity.Y >= 0 && IsTouchingTop(map)) ||
-                        (this.Velocity.Y <= 0 && IsTouchingBottom(map)))
+                    if (this.Velocity.Y >= 0 && IsTouchingTop(map) ||
+                       (this.Velocity.Y <= 0 && IsTouchingBottom(map)))
                         this.Velocity.Y = 0;
+                }
+
+                if (map.ID == 'L')
+                {
+                    if (IsTouchingLeft(map) || IsTouchingRight(map) || IsTouchingTop(map) || IsTouchingBottom(map))
+                    {
+                        V.animationDown = "WalkDownRed";
+                        V.animationUp = "WalkUpRed";
+                        V.animationLeft = "WalkLeftRed";
+                        V.animationRight = "WalkRightRed";
+                    }
+                }
+
+                if (map.ID == '0')
+                {
+                    if (IsTouchingLeft(map) || IsTouchingRight(map) || IsTouchingTop(map) || IsTouchingBottom(map))
+                    {
+                        V.animationDown = "WalkDown";
+                        V.animationUp = "WalkUp";
+                        V.animationLeft = "WalkLeft";
+                        V.animationRight = "WalkRight";
+                    }
                 }
             }
 
-            SetAnimations();
+            SetAnimations(V.animationUp, V.animationDown, V.animationLeft, V.animationRight);
 
             _animationManager.Update(gameTime);
 
@@ -119,7 +140,7 @@ namespace Labyrinth.Sprites
 
         public bool IsTouchingLeft(Map map)
         {
-            return this.Rectangle.Right + this.Velocity.X > map.Rectangle.Left &&
+            return this.Rectangle.Right + this.Velocity.X > map.Rectangle.Left + offset &&
               this.Rectangle.Left < map.Rectangle.Left &&
               this.Rectangle.Bottom > map.Rectangle.Top &&
               this.Rectangle.Top < map.Rectangle.Bottom;
@@ -127,7 +148,7 @@ namespace Labyrinth.Sprites
 
         public bool IsTouchingRight(Map map)
         {
-            return this.Rectangle.Left + this.Velocity.X < map.Rectangle.Right &&
+            return this.Rectangle.Left + this.Velocity.X < map.Rectangle.Right - offset &&
               this.Rectangle.Right > map.Rectangle.Right &&
               this.Rectangle.Bottom > map.Rectangle.Top &&
               this.Rectangle.Top < map.Rectangle.Bottom;
@@ -143,7 +164,7 @@ namespace Labyrinth.Sprites
 
         public bool IsTouchingBottom(Map map)
         {
-            return this.Rectangle.Top + this.Velocity.Y < map.Rectangle.Bottom &&
+            return this.Rectangle.Top + this.Velocity.Y < map.Rectangle.Bottom - offset &&
               this.Rectangle.Bottom > map.Rectangle.Bottom &&
               this.Rectangle.Right > map.Rectangle.Left &&
               this.Rectangle.Left < map.Rectangle.Right;

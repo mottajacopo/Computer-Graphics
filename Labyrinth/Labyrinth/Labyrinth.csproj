@@ -48,6 +48,8 @@
     <Compile Include="Models\Input.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sprites\Bullets.cs" />
+    <Compile Include="Sprites\Cannon.cs" />
     <Compile Include="Sprites\Map.cs" />
     <Compile Include="Sprites\Player.cs" />
     <Compile Include="Sprites\Sprite.cs" />

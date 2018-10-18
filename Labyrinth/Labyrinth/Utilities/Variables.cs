@@ -28,6 +28,11 @@ namespace Labyrinth
         public static List<Point> labEnter = new List<Point>();
         public static List<Point> labExit = new List<Point>();
 
+        public static string animationUp;
+        public static string animationDown;
+        public static string animationLeft;
+        public static string animationRight;
+
 
     }
 }

@@ -20,7 +20,7 @@ namespace Labyrinth.Sprites
         public Map(Texture2D texture)
             : base(texture)
         {
-            _texture = texture;           
+          
         }
 
         public char ID
@@ -33,12 +33,7 @@ namespace Labyrinth.Sprites
             }
         }
 
-        public virtual void Update(GameTime gameTime, List<Sprite> sprites)
-        {
-
-        }
-
-        public virtual void Draw(SpriteBatch spriteBatch)
+        public override void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(_texture, new Rectangle((int)Position.X, (int)Position.Y, 40, 40), Colour);
             

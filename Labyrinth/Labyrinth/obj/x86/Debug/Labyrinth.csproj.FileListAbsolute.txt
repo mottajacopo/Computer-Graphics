@@ -40,10 +40,6 @@ C:\Git\WorkRepository\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\Z
 C:\Git\WorkRepository\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaLeft.xnb
 C:\Git\WorkRepository\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaRight.xnb
 C:\Git\WorkRepository\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaUp.xnb
-D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\WalkingDown.xnb
-D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\WalkingLeft.xnb
-D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\WalkingRight.xnb
-D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\WalkingUp.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaDown.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaLeft.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaRight.xnb
@@ -54,8 +50,6 @@ D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphic
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\door2.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\grass.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\heart.xnb
-D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\hero.xnb
-D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\hero_damage.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\lava.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\mossy.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\wood.xnb
@@ -82,3 +76,7 @@ D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphic
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csproj.CopyComplete
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.exe
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.pdb
+D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaDownRed.xnb
+D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaLeftRed.xnb
+D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaRightRed.xnb
+D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaUpRed.xnb

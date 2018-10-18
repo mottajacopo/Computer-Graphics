@@ -55,24 +55,26 @@ namespace Labyrinth
       _map = FillLabyrinth(spriteBatch, _map);
       V.currentHeroPosition = V.labEnter[0];
 
-      var animations = new Dictionary<string, Animation>()
+    V.animationDown = "WalkDown";
+    V.animationUp = "WalkUp";
+    V.animationLeft = "WalkLeft";
+    V.animationRight = "WalkRight";
+
+            var animations = new Dictionary<string, Animation>()
       {
             { "WalkRight", new Animation(Content.Load<Texture2D>("Player/ZeldaRight"), 3) },
             { "WalkUp", new Animation(Content.Load<Texture2D>("Player/ZeldaUp"), 3) },
             { "WalkDown", new Animation(Content.Load<Texture2D>("Player/ZeldaDown"), 3) },
             { "WalkLeft", new Animation(Content.Load<Texture2D>("Player/ZeldaLeft"), 3) },
+            { "WalkRightRed", new Animation(Content.Load<Texture2D>("Player/ZeldaRightRed"), 3) },
+            { "WalkUpRed", new Animation(Content.Load<Texture2D>("Player/ZeldaUpRed"), 3) },
+            { "WalkDownRed", new Animation(Content.Load<Texture2D>("Player/ZeldaDownRed"), 3) },
+            { "WalkLeftRed", new Animation(Content.Load<Texture2D>("Player/ZeldaLeftRed"), 3) },
       };
 
        _player = new List<Player>()
       {
-        new Player(new Dictionary<string, Animation>()
-        {
-            { "WalkRight", new Animation(Content.Load<Texture2D>("Player/ZeldaRight"), 3) },
-            { "WalkUp", new Animation(Content.Load<Texture2D>("Player/ZeldaUp"), 3) },
-            { "WalkDown", new Animation(Content.Load<Texture2D>("Player/ZeldaDown"), 3) },
-            { "WalkLeft", new Animation(Content.Load<Texture2D>("Player/ZeldaLeft"), 3) },
-
-        })
+        new Player(animations)
         {
           Position = H.ToVector2(H.HeroPosition()),   
           Input = new Input()

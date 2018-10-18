@@ -54,6 +54,10 @@ namespace Labyrinth.Sprites
         {
         }
 
+        public virtual void Draw(SpriteBatch spriteBatch)
+        {
+        }
+
         #endregion
     }
 }
