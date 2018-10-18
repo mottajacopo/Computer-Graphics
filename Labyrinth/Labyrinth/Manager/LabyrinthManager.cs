@@ -41,10 +41,18 @@ namespace Labyrinth
                 char[] ca = lines[i].ToCharArray();
                 for (int j = 0; j < V.labyrinthMatrixColumns; j++)
                 {
+                    int dice = H.Random();
                     switch (ca[j])
                     {
                         case '0':
-                            V.labyrinthMatrix[i, j] = '0';
+                            if (dice == 5)
+                            {
+                                V.labyrinthMatrix[i, j] = 'C';
+                            }
+                            else
+                            {
+                                V.labyrinthMatrix[i, j] = '0';
+                            }
                             break;
                         case '1':
                             V.labyrinthMatrix[i, j] = '1';
@@ -74,8 +82,8 @@ namespace Labyrinth
         public List<Map> FillLabyrinth(SpriteBatch sp , List<Map> _map)
         {
             Texture2D brick = C.brickGrass; // lo uso come brick defauld
-           
 
+            int[,] k = V.labyrinthMatrix;
             for (int i = 0; i < V.labyrinthMatrixRows; i++)
             {
 
@@ -149,9 +157,17 @@ namespace Labyrinth
                                 ID = 'E',
                             });
                             break;
+                        case 'C':
+                            brick = C.brickEnd;
+
+                            _map.Add(new Map(brick)
+                            {
+                                Position = H.ToVector2(H.BrickPosition()),
+                                ID = 'C',
+                            });
+                            break;
                     }
-                    //disegno il labirinto
-                    //sp.Draw(brick, new Rectangle(H.PointToPixel(new Point(j, i)), C.PIXELSXPOINT), Color.White);
+                   
                 }
             }
             return _map;

@@ -49,6 +49,13 @@ namespace Labyrinth
             return new Vector2(point.X, point.Y);
         }
 
+        public static int Random()
+        {
+            Random rnd = new Random(Guid.NewGuid().GetHashCode());
+            int dice = rnd.Next(1, 40);
+            return dice;
+        }
+
     }
 
 }
