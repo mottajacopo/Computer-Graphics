@@ -4,6 +4,14 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon10.30.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon12.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon2.30.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon3.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon4.30.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon6.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon7.30.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon9.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/diamante.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/diamante2.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/door.png</File>
@@ -23,6 +31,14 @@
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/wood.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
