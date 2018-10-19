@@ -45,7 +45,7 @@ namespace Labyrinth
                     switch (ca[j])
                     {
                         case '0':
-                            if (dice == 5)
+                            if (dice == 5)   // soluzione temporanea cannoni (poi usiamo la classe )
                             {
                                 V.labyrinthMatrix[i, j] = 'C';
                             }
@@ -79,7 +79,7 @@ namespace Labyrinth
             }
         }
 
-        public List<Map> FillLabyrinth(SpriteBatch sp, List<Map> _map)
+        public List<Map> FillLabyrinth(SpriteBatch sp, List<Map> _map )
         {
             Texture2D brick = C.brickGrass; // lo uso come brick defauld
 
@@ -89,17 +89,19 @@ namespace Labyrinth
 
                 for (int j = 0; j < V.labyrinthMatrixColumns; j++)
                 {
+                    int dice = H.Random();
                     V.currentBrickPosition = new Point(j, i);
                     switch (V.labyrinthMatrix[i, j])
                     {
                         case '0':
+                            
                             brick = C.brickGrass;
-
                             _map.Add(new Map(brick)
                             {
                                 Position = H.ToVector2(H.BrickPosition()),
                                 ID = '0',
                             });
+
                             break;
                         case '1':
                             brick = C.brickWall;
@@ -157,10 +159,19 @@ namespace Labyrinth
                                 ID = 'E',
                             });
                             break;
-                        case 'C':
-                            brick = C.brickEnd;
 
+                        case 'C':
+
+                            brick = C.brickGrass;
                             _map.Add(new Map(brick)
+                            {
+                                Position = H.ToVector2(H.BrickPosition()),
+                                ID = 'C',
+                            });
+
+                            brick = C.cannon6;
+
+                            _map.Add(new Map(C.cannon6)
                             {
                                 Position = H.ToVector2(H.BrickPosition()),
                                 ID = 'C',

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using Labyrinth.Models;
 using Labyrinth.Sprites;
 using Labyrinth.Manager;
+using System.Threading.Tasks;
 
 namespace Labyrinth
 {
@@ -17,9 +18,11 @@ namespace Labyrinth
 
         private List<Player> _player;
         private List<Map> _map = new List<Map>();
+        public List<Sprite> _sprite = new List<Sprite>(); // list for sprite (es . grave)
         private Dictionary<string, Animation> animations;
         private float timer;
-        private SpriteFont font; 
+        private SpriteFont font;
+        bool check = false; // need for death count check
 
         public Game1()
         {
@@ -52,16 +55,30 @@ namespace Labyrinth
             C.brickStart = Content.Load<Texture2D>("grass");
             C.brickEnd = Content.Load<Texture2D>("door");
             C.brickEnd2 = Content.Load<Texture2D>("door2");
+            C.Grave = Content.Load<Texture2D>("Rip");
+
+            C.cannon2_30 = Content.Load<Texture2D>("Cannon/cannon2.30");
+            C.cannon3 = Content.Load<Texture2D>("Cannon/cannon3");
+            C.cannon4_30 = Content.Load<Texture2D>("Cannon/cannon4.30");
+            C.cannon6 = Content.Load<Texture2D>("Cannon/cannon6");
+            C.cannon7_30 = Content.Load<Texture2D>("Cannon/cannon7.30");
+            C.cannon9 = Content.Load<Texture2D>("Cannon/cannon9");
+            C.cannon10_30 = Content.Load<Texture2D>("Cannon/cannon10.30");
+            C.cannon12 = Content.Load<Texture2D>("Cannon/cannon12");
 
 
             ReadLabyrinthSpec(V.labyrinthMatrix, C.LabyrinthPathName);
-            _map = FillLabyrinth(spriteBatch, _map);
+            _map = FillLabyrinth(spriteBatch, _map );
             V.currentHeroPosition = V.labEnter[0];
 
             V.animationDown = "WalkDown";
             V.animationUp = "WalkUp";
             V.animationLeft = "WalkLeft";
             V.animationRight = "WalkRight";
+            V.animationDied = "HasDied";
+
+            V.deathCount = 0;
+            V.playerHealth = 100;
 
             animations = new Dictionary<string, Animation>()
             {
@@ -73,6 +90,7 @@ namespace Labyrinth
                 { "WalkUpRed", new Animation(Content.Load<Texture2D>("Player/ZeldaUpRed"), 3) },
                 { "WalkDownRed", new Animation(Content.Load<Texture2D>("Player/ZeldaDownRed"), 3) },
                 { "WalkLeftRed", new Animation(Content.Load<Texture2D>("Player/ZeldaLeftRed"), 3) },
+                { "HasDied", new Animation(Content.Load<Texture2D>("Player/ZeldaHasDied"), 1) },
             };
 
             _player = new List<Player>()
@@ -80,7 +98,7 @@ namespace Labyrinth
                 new Player(animations)
                 {
                     Position = H.ToVector2(H.HeroPosition()),
-                    Health = 10,
+                    Health = 5,
                     Input = new Input()
                     {
                     Up = Keys.W,
@@ -101,12 +119,16 @@ namespace Labyrinth
 
         private void Restart()
         {
+            V.deathCount++;
+            check = false;
             _player = new List<Player>()
             {
+                
+
                 new Player(animations)
                 {
                     Position = H.ToVector2(H.HeroPosition()),
-                    Health = 10,
+                    Health = 5,
                     Input = new Input()
                     {
                     Up = Keys.W,
@@ -116,20 +138,31 @@ namespace Labyrinth
                     },
                 },
             };
+
+            _sprite.Add(  // add new grave every time player dies
+                new Sprite(C.Grave)
+                {
+                    Position = V.deathHeroPoisition,
+
+                }
+            );
+            
         }
 
         protected override void Update(GameTime gameTime)
         {
             timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-            foreach (var sprite in _player)
+            foreach (var player in _player)
             {
-                sprite.Update(gameTime, _player, _map);
+                player.Update(gameTime, _player, _map);
 
                 
-                if(sprite.hasDied)
+                if(player.hasDied && !check)
                 {
-                    Restart();
+                    Task.Delay(500).ContinueWith(t => Restart());  //delay for death animation show
+                    check = true;
+                    
                 }
                 
             }
@@ -151,11 +184,19 @@ namespace Labyrinth
             foreach (var map in _map)
                 map.Draw(spriteBatch);
 
-            foreach (var sprite in _player)
-                sprite.Draw(spriteBatch);
+            foreach (var player in _player)
+                player.Draw(spriteBatch);
+
+            if (_sprite.Count >0)  // draw sprite different from player ( es grave )
+            {
+                foreach (var sprite in _sprite)
+                    sprite.Draw(spriteBatch);
+            }
 
             spriteBatch.DrawString(font, string.Format("Time: {0}", timer), new Vector2(10, 5), Color.White);
-            spriteBatch.DrawString(font, string.Format("Score: {0}", V.score), new Vector2(10, 35), Color.White);
+            spriteBatch.DrawString(font, string.Format("Score: {0}", V.score), new Vector2(10, 25), Color.White);
+            spriteBatch.DrawString(font, string.Format("Death count: {0}", V.deathCount), new Vector2(10, 45), Color.White);  // death counter
+            spriteBatch.DrawString(font, string.Format("Health: {0}", V.playerHealth), new Vector2(10, 65), Color.White);
 
             spriteBatch.End();
 

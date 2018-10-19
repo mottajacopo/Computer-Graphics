@@ -4,34 +4,38 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon10.30.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon12.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon2.30.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon3.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon4.30.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon6.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon7.30.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon9.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/diamante.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/diamante2.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/door.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/door2.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Fonts/Font.spritefont</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/grass.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/heart.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/lava.jpg</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/mossy.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaDown.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaDownRed.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaLeft.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaLeftRed.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaRight.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaRightRed.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaUp.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaUpRed.png</File>
-    <File>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/wood.jpg</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon10.30.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon12.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon2.30.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon3.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon4.30.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon6.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon7.30.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon9.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/diamante.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/diamante2.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/door.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/door2.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Fonts/Font.spritefont</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/grass.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/heart.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/lava.jpg</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/mossy.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaDown.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaDownRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaHasDied.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaLeft.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaLeftRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaRight.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaRightRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaUp.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaUpRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Rip.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/wood.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

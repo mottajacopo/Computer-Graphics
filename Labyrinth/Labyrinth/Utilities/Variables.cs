@@ -22,6 +22,10 @@ namespace Labyrinth
 
         public static Point currentHeroPosition;
         public static Point currentBrickPosition;
+        public static Vector2 deathHeroPoisition;
+
+        public static int deathCount;
+        public static int playerHealth;
 
         public static List<Point> labEnter = new List<Point>();
         public static List<Point> labExit = new List<Point>();
@@ -30,6 +34,8 @@ namespace Labyrinth
         public static string animationDown;
         public static string animationLeft;
         public static string animationRight;
+        public static string animationDied;
+
 
         public static int score;
         

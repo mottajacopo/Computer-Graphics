@@ -90,9 +90,11 @@ namespace Labyrinth.Sprites
             }
         }
 
-        protected virtual void SetAnimations(string up, string down, string left, string right)
+        protected virtual void SetAnimations(string up, string down, string left, string right, string died)
         {
-            if (Velocity.X > 0)
+            if (hasDied)
+                _animationManager.Play(_animations[died]);
+            else if (Velocity.X > 0)
                 _animationManager.Play(_animations[right]);
             else if (Velocity.X < 0)
                 _animationManager.Play(_animations[left]);
@@ -123,7 +125,7 @@ namespace Labyrinth.Sprites
 
             foreach (var map in _map)
             {
-                if (map.ID == '1')
+                if (map.ID == '1' || map.ID == 'C')
                 {
                     if (this.Velocity.X >= 0 && IsTouchingLeft(map) ||
                        (this.Velocity.X <= 0 && IsTouchingRight(map)))
@@ -147,12 +149,17 @@ namespace Labyrinth.Sprites
                         {
                             Health = Math.Max(0f,Health-deltaTime);
                             V.score += 15;
+                            V.playerHealth = (int)Health * 20;
                         }
                         else
                         {
                             this.hasDied = true;
                             deltaTime = 0;
                             V.score += 50;
+                            V.deathHeroPoisition = this.Position;  // save death position
+                            this.Velocity.X = 0;
+                            this.Velocity.Y = 0;
+
                         }
                     }
                 }
@@ -171,7 +178,7 @@ namespace Labyrinth.Sprites
                 }
             }
 
-            SetAnimations(V.animationUp, V.animationDown, V.animationLeft, V.animationRight);
+            SetAnimations(V.animationUp, V.animationDown, V.animationLeft, V.animationRight, V.animationDied);
 
             _animationManager.Update(gameTime);
 

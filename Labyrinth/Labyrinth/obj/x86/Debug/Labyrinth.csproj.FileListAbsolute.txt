@@ -137,3 +137,7 @@ D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphic
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon7.30.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon9.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Fonts\Font.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaHasDied3.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Fonts\Font.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Rip.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaHasDied.xnb

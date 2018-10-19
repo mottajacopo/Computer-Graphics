@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/diamante2.png</SourceFile>
-  <SourceTime>2018-10-19T10:16:06.9515318+02:00</SourceTime>
-  <DestFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/Content/diamante2.xnb</DestFile>
-  <DestTime>2018-10-19T10:25:07.5695641+02:00</DestTime>
+  <SourceFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaHasDied.png</SourceFile>
+  <SourceTime>2018-10-19T09:07:22.6699183+02:00</SourceTime>
+  <DestFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/Content/Player/ZeldaHasDied.xnb</DestFile>
+  <DestTime>2018-10-19T10:27:14.42711+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-09-23T23:55:52+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
