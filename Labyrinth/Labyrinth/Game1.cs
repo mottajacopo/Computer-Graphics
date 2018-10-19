@@ -19,6 +19,8 @@ namespace Labyrinth
         private List<Player> _player;
         private List<Map> _map = new List<Map>();
         public List<Sprite> _sprite = new List<Sprite>(); // list for sprite (es . grave)
+        public List<Cannon> _cannon = new List<Cannon>();
+
         private Dictionary<string, Animation> animations;
         private float timer;
         private SpriteFont font;
@@ -66,10 +68,11 @@ namespace Labyrinth
             C.cannon10_30 = Content.Load<Texture2D>("Cannon/cannon10.30");
             C.cannon12 = Content.Load<Texture2D>("Cannon/cannon12");
 
-
+            V.cannonTexture = C.cannon3;
             ReadLabyrinthSpec(V.labyrinthMatrix, C.LabyrinthPathName);
-            _map = FillLabyrinth(spriteBatch, _map );
+            _map = FillLabyrinth(spriteBatch, _map , _cannon);
             V.currentHeroPosition = V.labEnter[0];
+
 
             V.animationDown = "WalkDown";
             V.animationUp = "WalkUp";
@@ -120,6 +123,8 @@ namespace Labyrinth
         private void Restart()
         {
             V.deathCount++;
+            V.playerHealth = 100;
+
             check = false;
             _player = new List<Player>()
             {
@@ -167,6 +172,11 @@ namespace Labyrinth
                 
             }
 
+            foreach (var cannon in _cannon)
+            {
+                cannon.Update(gameTime, _cannon, _map);
+            }
+
             if (timer > 1)
             {
                 // do something
@@ -184,6 +194,9 @@ namespace Labyrinth
             foreach (var map in _map)
                 map.Draw(spriteBatch);
 
+            foreach (var cannon in _cannon)
+                cannon.Draw(spriteBatch);
+
             foreach (var player in _player)
                 player.Draw(spriteBatch);
 
@@ -193,10 +206,10 @@ namespace Labyrinth
                     sprite.Draw(spriteBatch);
             }
 
-            spriteBatch.DrawString(font, string.Format("Time: {0}", timer), new Vector2(10, 5), Color.White);
-            spriteBatch.DrawString(font, string.Format("Score: {0}", V.score), new Vector2(10, 25), Color.White);
-            spriteBatch.DrawString(font, string.Format("Death count: {0}", V.deathCount), new Vector2(10, 45), Color.White);  // death counter
-            spriteBatch.DrawString(font, string.Format("Health: {0}", V.playerHealth), new Vector2(10, 65), Color.White);
+            spriteBatch.DrawString(font, string.Format("Time: {0}", timer.ToString("n2")), new Vector2(10, 5), Color.White);
+            spriteBatch.DrawString(font, string.Format("Score: {0}", V.score), new Vector2(10, 30), Color.White);
+            spriteBatch.DrawString(font, string.Format("Death count: {0}", V.deathCount), new Vector2(10, 55), Color.White);  // death counter
+            spriteBatch.DrawString(font, string.Format("Health: {0}", V.playerHealth), new Vector2(10, 80), Color.White);
 
             spriteBatch.End();
 

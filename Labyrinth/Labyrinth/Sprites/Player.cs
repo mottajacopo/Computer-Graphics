@@ -60,7 +60,7 @@ namespace Labyrinth.Sprites
         public override void Draw(SpriteBatch spriteBatch)
         {
             if (_texture != null)
-                spriteBatch.Draw(_texture, new Rectangle((int)Position.X, (int)Position.Y, 40, 40), Color.White);
+                spriteBatch.Draw(_texture, new Rectangle((int)Position.X, (int)Position.Y, 30, 30), Color.White);
             else if (_animationManager != null)
                 _animationManager.Draw(spriteBatch);
             else throw new Exception("This ain't right..!");
@@ -159,7 +159,6 @@ namespace Labyrinth.Sprites
                             V.deathHeroPoisition = this.Position;  // save death position
                             this.Velocity.X = 0;
                             this.Velocity.Y = 0;
-
                         }
                     }
                 }
@@ -182,7 +181,7 @@ namespace Labyrinth.Sprites
 
             _animationManager.Update(gameTime);
 
-            Position += 2* Velocity;
+            Position += 2 * Velocity;
 
             // keep the player in the map limitation
             _position.X = MathHelper.Clamp(Position.X, 0, C.MAINWINDOW.X - Rectangle.Width);

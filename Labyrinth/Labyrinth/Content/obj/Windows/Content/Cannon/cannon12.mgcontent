@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon12.png</SourceFile>
-  <SourceTime>2018-10-19T11:10:06.9571601+02:00</SourceTime>
-  <DestFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/Content/Cannon/cannon12.xnb</DestFile>
-  <DestTime>2018-10-19T11:10:59.8910476+02:00</DestTime>
+  <SourceFile>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannon12.png</SourceFile>
+  <SourceTime>2018-10-19T12:01:23.2281852+02:00</SourceTime>
+  <DestFile>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/Content/Cannon/cannon12.xnb</DestFile>
+  <DestTime>2018-10-19T12:01:35.6237399+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-09-23T23:55:52+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -18,8 +18,7 @@ namespace Labyrinth
         public static int[,] labyrinthMatrix;
 
         public static Rectangle labyrinthRect;
-
-
+        
         public static Point currentHeroPosition;
         public static Point currentBrickPosition;
         public static Vector2 deathHeroPoisition;
@@ -35,6 +34,8 @@ namespace Labyrinth
         public static string animationLeft;
         public static string animationRight;
         public static string animationDied;
+
+        public static Texture2D cannonTexture;
 
 
         public static int score;

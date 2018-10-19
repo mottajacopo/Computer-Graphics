@@ -79,7 +79,7 @@ namespace Labyrinth
             }
         }
 
-        public List<Map> FillLabyrinth(SpriteBatch sp, List<Map> _map )
+        public List<Map> FillLabyrinth(SpriteBatch sp, List<Map> _map , List<Cannon> _cannon)
         {
             Texture2D brick = C.brickGrass; // lo uso come brick defauld
 
@@ -169,12 +169,9 @@ namespace Labyrinth
                                 ID = 'C',
                             });
 
-                            brick = C.cannon6;
-
-                            _map.Add(new Map(C.cannon6)
+                            _cannon.Add(new Cannon(V.cannonTexture)
                             {
                                 Position = H.ToVector2(H.BrickPosition()),
-                                ID = 'C',
                             });
                             break;
                     }
