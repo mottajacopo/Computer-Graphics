@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/mossy.png</SourceFile>
-  <SourceTime>2018-10-18T20:03:39.9973586+02:00</SourceTime>
-  <DestFile>D:/Università/Laurea Magistrale/Computers Graphic Architecture/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/Content/mossy.xnb</DestFile>
-  <DestTime>2018-10-19T12:01:36.343314+02:00</DestTime>
+  <SourceFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/mossy.png</SourceFile>
+  <SourceTime>2018-10-19T20:26:55.2574077+02:00</SourceTime>
+  <DestFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/Content/mossy.xnb</DestFile>
+  <DestTime>2018-10-19T20:27:51.7840912+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-09-23T23:55:52+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

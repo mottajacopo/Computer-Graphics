@@ -7,10 +7,10 @@ using Labyrinth.Models;
 using Labyrinth.Sprites;
 using Labyrinth.Manager;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Labyrinth
 {
-
     public partial class Game1 : Game
     {
         GraphicsDeviceManager graphics;
@@ -35,19 +35,16 @@ namespace Labyrinth
 
         protected override void Initialize()
         {
-
             graphics.PreferredBackBufferWidth = C.MAINWINDOW.X;
             graphics.PreferredBackBufferHeight = C.MAINWINDOW.Y;
 
             graphics.ApplyChanges();
-
 
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
-
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             C.brickWall = Content.Load<Texture2D>("mossy");
@@ -73,13 +70,12 @@ namespace Labyrinth
             _map = FillLabyrinth(spriteBatch, _map , _cannon);
             V.currentHeroPosition = V.labEnter[0];
 
-
             V.animationDown = "WalkDown";
             V.animationUp = "WalkUp";
             V.animationLeft = "WalkLeft";
             V.animationRight = "WalkRight";
             V.animationDied = "HasDied";
-
+ 
             V.deathCount = 0;
             V.playerHealth = 100;
 
@@ -117,7 +113,6 @@ namespace Labyrinth
 
         protected override void UnloadContent()
         {
-
         }
 
         private void Restart()
@@ -128,8 +123,6 @@ namespace Labyrinth
             check = false;
             _player = new List<Player>()
             {
-                
-
                 new Player(animations)
                 {
                     Position = H.ToVector2(H.HeroPosition()),
