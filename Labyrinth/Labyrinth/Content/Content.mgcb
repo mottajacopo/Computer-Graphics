@@ -13,7 +13,7 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin Cannon/cannon10.30.png
+#begin Cannon/cannonDown.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -23,9 +23,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Cannon/cannon10.30.png
+/build:Cannon/cannonDown.png
 
-#begin Cannon/cannon12.png
+#begin Cannon/cannonLeft.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -35,9 +35,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Cannon/cannon12.png
+/build:Cannon/cannonLeft.png
 
-#begin Cannon/cannon2.30.png
+#begin Cannon/cannonLeftDown.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -47,9 +47,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Cannon/cannon2.30.png
+/build:Cannon/cannonLeftDown.png
 
-#begin Cannon/cannon3.png
+#begin Cannon/cannonLeftUp.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -59,9 +59,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Cannon/cannon3.png
+/build:Cannon/cannonLeftUp.png
 
-#begin Cannon/cannon4.30.png
+#begin Cannon/cannonRight.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -71,9 +71,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Cannon/cannon4.30.png
+/build:Cannon/cannonRight.png
 
-#begin Cannon/cannon6.png
+#begin Cannon/cannonRightDown.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -83,9 +83,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Cannon/cannon6.png
+/build:Cannon/cannonRightDown.png
 
-#begin Cannon/cannon7.30.png
+#begin Cannon/cannonRightUp.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -95,9 +95,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Cannon/cannon7.30.png
+/build:Cannon/cannonRightUp.png
 
-#begin Cannon/cannon9.png
+#begin Cannon/cannonUp.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -107,7 +107,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Cannon/cannon9.png
+/build:Cannon/cannonUp.png
 
 #begin diamante.png
 /importer:TextureImporter

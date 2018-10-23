@@ -7,10 +7,11 @@ using Labyrinth.Models;
 using Labyrinth.Sprites;
 using Labyrinth.Manager;
 using System.Threading.Tasks;
-using System.IO;
+using System;
 
 namespace Labyrinth
 {
+
     public partial class Game1 : Game
     {
         GraphicsDeviceManager graphics;
@@ -26,6 +27,8 @@ namespace Labyrinth
         private SpriteFont font;
         bool check = false; // need for death count check
 
+        private Random r = new Random();
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -35,16 +38,19 @@ namespace Labyrinth
 
         protected override void Initialize()
         {
+
             graphics.PreferredBackBufferWidth = C.MAINWINDOW.X;
             graphics.PreferredBackBufferHeight = C.MAINWINDOW.Y;
 
             graphics.ApplyChanges();
+
 
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
+
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             C.brickWall = Content.Load<Texture2D>("mossy");
@@ -56,26 +62,32 @@ namespace Labyrinth
             C.brickEnd2 = Content.Load<Texture2D>("door2");
             C.Grave = Content.Load<Texture2D>("Rip");
 
-            C.cannon2_30 = Content.Load<Texture2D>("Cannon/cannon2.30");
-            C.cannon3 = Content.Load<Texture2D>("Cannon/cannon3");
-            C.cannon4_30 = Content.Load<Texture2D>("Cannon/cannon4.30");
-            C.cannon6 = Content.Load<Texture2D>("Cannon/cannon6");
-            C.cannon7_30 = Content.Load<Texture2D>("Cannon/cannon7.30");
-            C.cannon9 = Content.Load<Texture2D>("Cannon/cannon9");
-            C.cannon10_30 = Content.Load<Texture2D>("Cannon/cannon10.30");
-            C.cannon12 = Content.Load<Texture2D>("Cannon/cannon12");
+            C.cannonRightUp = Content.Load<Texture2D>("Cannon/cannonRightUp");
+            C.cannonRight = Content.Load<Texture2D>("Cannon/cannonRight");
+            C.cannonRightDown = Content.Load<Texture2D>("Cannon/cannonRightDown");
+            C.cannonDown = Content.Load<Texture2D>("Cannon/cannonDown");
+            C.cannonLeftDown = Content.Load<Texture2D>("Cannon/cannonLeftDown");
+            C.cannonLeft = Content.Load<Texture2D>("Cannon/cannonLeft");
+            C.cannonLeftUp = Content.Load<Texture2D>("Cannon/cannonLeftUp");
+            C.cannonUp = Content.Load<Texture2D>("Cannon/cannonUp");
 
-            V.cannonTexture = C.cannon3;
+            Texture2D[] values = new Texture2D[]{ C.cannonRightUp, C.cannonRight, C.cannonRightDown, C.cannonDown, C.cannonLeftDown,
+                            C.cannonLeft, C.cannonLeftUp, C.cannonUp };
+            V.cannonTexture = values[r.Next(0, 2)];
+            //V.cannonTexture = C.cannonRight;
+
             ReadLabyrinthSpec(V.labyrinthMatrix, C.LabyrinthPathName);
             _map = FillLabyrinth(spriteBatch, _map , _cannon);
+
             V.currentHeroPosition = V.labEnter[0];
+
 
             V.animationDown = "WalkDown";
             V.animationUp = "WalkUp";
             V.animationLeft = "WalkLeft";
             V.animationRight = "WalkRight";
             V.animationDied = "HasDied";
- 
+
             V.deathCount = 0;
             V.playerHealth = 100;
 
@@ -113,6 +125,7 @@ namespace Labyrinth
 
         protected override void UnloadContent()
         {
+
         }
 
         private void Restart()
@@ -123,6 +136,8 @@ namespace Labyrinth
             check = false;
             _player = new List<Player>()
             {
+                
+
                 new Player(animations)
                 {
                     Position = H.ToVector2(H.HeroPosition()),

@@ -129,13 +129,9 @@ C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Canno
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon7.30.xnb
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon9.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon10.30.xnb
-D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon12.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon2.30.xnb
-D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon3.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon4.30.xnb
-D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon6.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon7.30.xnb
-D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon9.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Fonts\Font.xnb
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaHasDied3.xnb
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Fonts\Font.xnb
@@ -148,7 +144,63 @@ D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphic
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonUp.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaHasDied.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Rip.xnb
-C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonDown.xnb
-C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonLeft.xnb
-C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonRight.xnb
-C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonUp.xnb
+D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonLeftDown.xnb
+D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonLeftUp.xnb
+D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonRightDown.xnb
+D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonRightUp.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaHasDied3.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon10.30.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon2.30.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon4.30.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon7.30.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaDown.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaDownRed.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaHasDied.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaLeft.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaLeftRed.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaRight.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaRightRed.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaUp.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaUpRed.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Fonts\Font.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonDown.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonLeft.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonLeftDown.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonLeftUp.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonRight.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonRightDown.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonRightUp.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonUp.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\diamante.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\diamante2.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\door.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\door2.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\grass.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\heart.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\lava.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\mossy.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Rip.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\wood.xnb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Labyrinth.exe
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Labyrinth.pdb
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csprojAssemblyReference.cache
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csproj.CoreCompileInputs.cache
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csproj.CopyComplete
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.exe
+C:\Users\insan\Desktop\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.pdb

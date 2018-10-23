@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaDown.png</SourceFile>
-  <SourceTime>2018-10-19T21:07:27.7124577+02:00</SourceTime>
-  <DestFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/Content/Player/ZeldaDown.xnb</DestFile>
-  <DestTime>2018-10-19T21:11:33.489358+02:00</DestTime>
+  <SourceFile>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Player/ZeldaDown.png</SourceFile>
+  <SourceTime>2018-10-23T19:21:26.1320235+02:00</SourceTime>
+  <DestFile>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/bin/Windows/Content/Player/ZeldaDown.xnb</DestFile>
+  <DestTime>2018-10-23T19:22:09.1480463+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-09-23T23:55:52+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

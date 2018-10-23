@@ -53,15 +53,34 @@ namespace Labyrinth.Sprites
                 if (map.ID == '1')
                 {
                     if (IsTouchingLeft(map))
-                        _texture = C.cannon9;
+                    {
+                        if (IsTouchingBottom(map))
+                            _texture = C.cannonLeftDown;
+                        else if(IsTouchingTop(map))
+                            _texture = C.cannonLeftUp;
+                        else
+                            _texture = C.cannonLeft;
+                    }
                     else if (IsTouchingRight(map))
-                        _texture = C.cannon3;
+                    {
+                        if (IsTouchingBottom(map))
+                            _texture = C.cannonRightDown;
+                        else if (IsTouchingTop(map))
+                            _texture = C.cannonRightUp;
+                        else
+                            _texture = C.cannonRight;
+                    }
                     else if (IsTouchingTop(map))
-                        _texture = C.cannon12;
+                    {
+                        _texture = C.cannonUp;
+                    }
                     else if (IsTouchingBottom(map))
-                        _texture = C.cannon6;
+                    {
+                        _texture = C.cannonDown;
+                    }
                 }
-            }           
+            }
+
         }
 
         public Cannon(Texture2D texture)
