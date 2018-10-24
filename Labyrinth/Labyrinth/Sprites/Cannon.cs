@@ -15,16 +15,24 @@ namespace Labyrinth.Sprites
     public class Cannon : Sprite
     {
 
-        #region Fields
+       
 
         protected AnimationManager _animationManager;
         protected Dictionary<string, Animation> _animations;
         protected int offset = 20;
+        public int speedX = 1;
+        public int speedY = -1;
+
+        private Random r = new Random();
+
+        Texture2D[] values = new Texture2D[]{ C.cannonRightUp, C.cannonRight, C.cannonRightDown, C.cannonDown, C.cannonLeftDown,
+                            C.cannonLeft, C.cannonLeftUp, C.cannonUp };
+
         //protected bool hasDead = false;
 
-        #endregion
 
-        #region Properties
+
+
 
         public override Vector2 Position
         {
@@ -37,9 +45,9 @@ namespace Labyrinth.Sprites
                     _animationManager.Position = _position;
             }
         }
-        #endregion
+        
 
-        #region Methods
+        
 
         public override void Draw(SpriteBatch spriteBatch)
         {
@@ -54,30 +62,21 @@ namespace Labyrinth.Sprites
                 {
                     if (IsTouchingLeft(map))
                     {
-                        if (IsTouchingBottom(map))
-                            _texture = C.cannonLeftDown;
-                        else if(IsTouchingTop(map))
-                            _texture = C.cannonLeftUp;
-                        else
-                            _texture = C.cannonLeft;
+                        _texture = C.cannonLeft; speedX = -1; speedY = 0; 
                     }
                     else if (IsTouchingRight(map))
                     {
-                        if (IsTouchingBottom(map))
-                            _texture = C.cannonRightDown;
-                        else if (IsTouchingTop(map))
-                            _texture = C.cannonRightUp;
-                        else
-                            _texture = C.cannonRight;
+                        _texture = C.cannonRight; speedX = 1; speedY = 0; 
                     }
                     else if (IsTouchingTop(map))
                     {
-                        _texture = C.cannonUp;
+                        _texture = C.cannonUp; speedX = 0; speedY = -1; 
                     }
                     else if (IsTouchingBottom(map))
                     {
-                        _texture = C.cannonDown;
-                    }
+                        _texture = C.cannonDown; speedX = 0; speedY = 1; 
+                    }     
+                    
                 }
             }
 
@@ -88,7 +87,7 @@ namespace Labyrinth.Sprites
         {
 
         }
-        #endregion
+       
 
         public bool IsTouchingLeft(Map map)
         {

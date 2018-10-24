@@ -12,77 +12,67 @@ using Labyrinth.Manager;
 
 namespace Labyrinth.Sprites
 {
-    public class Bullets : Sprite
-    {
-
-        #region Fields
-
-        #endregion
-
-        #region Properties
-
-        #endregion
-
-        #region Methods
-
-        public override void Draw(SpriteBatch spriteBatch)
+        public class Bullets  : Microsoft.Xna.Framework.DrawableGameComponent //non viene gestito da game, ma si gestisce automaticamente come se fosse un altro game
         {
+            protected Texture2D texture;
+            protected Rectangle spriteRectangle;
+            protected Point position;
+            protected int YSpeed;
+            protected int XSpeed;
+            protected Random random;
+            protected SpriteBatch sBatch;
 
-        }
+            public Bullets(Game game, ref Texture2D theTexture ,Cannon _cannon) : base(game)
+            {
+                this.texture = theTexture;
+                this.position = new Point();
 
-        public virtual void Move()
-        {
-          
-        }
+                sBatch = (SpriteBatch)Game.Services.GetService(typeof(SpriteBatch));
 
-        protected virtual void SetAnimations()
-        {
-            
-        }
+                spriteRectangle = new Rectangle(0, 0, C.BULLETWIDTH, C.BULLETHEIGHT);
 
-        public Bullets(Texture2D texture)
-            : base(texture)
-        {
-        }
-        
-        public void Update(GameTime gameTime, List<Player> player, List<Map> _map)
-        {
-            
-        }
+                random = new Random(this.GetHashCode());
 
-        public bool IsTouchingLeft(Player player)
-        {
-            return this.Rectangle.Right  > player.Rectangle.Left  &&
-              this.Rectangle.Left < player.Rectangle.Left &&
-              this.Rectangle.Bottom > player.Rectangle.Top &&
-              this.Rectangle.Top < player.Rectangle.Bottom;
-        }
+                PutInStartPosition(_cannon);
+            }
+            public void PutInStartPosition(Cannon _cannon)
+            {
+                position.X = (int)_cannon.Position.X;
+                position.Y = (int)_cannon.Position.Y;
 
-        public bool IsTouchingRight(Sprite player)
-        {
-            return this.Rectangle.Left < player.Rectangle.Right &&
-              this.Rectangle.Right > player.Rectangle.Right &&
-              this.Rectangle.Bottom > player.Rectangle.Top &&
-              this.Rectangle.Top < player.Rectangle.Bottom;
-        }
+                XSpeed = _cannon.speedX;
+                YSpeed = _cannon.speedY;
+            }
+            public override void Draw(GameTime gameTime)
+            {
+                sBatch.Draw(texture, new Rectangle(position, new Point(C.BULLETWIDTH, C.BULLETHEIGHT)), Color.White);
+                base.Draw(gameTime);
+            }
 
-        public bool IsTouchingTop(Sprite player)
-        {
-            return this.Rectangle.Bottom > player.Rectangle.Top &&
-              this.Rectangle.Top < player.Rectangle.Top &&
-              this.Rectangle.Right > player.Rectangle.Left &&
-              this.Rectangle.Left < player.Rectangle.Right;
+            public override void Update(GameTime gameTime)
+            {
+            /*
+                if (V.labyrinthPixels.Intersects(new Rectangle(position.X, position.Y, C.BULLETWIDTH, C.BULLETHEIGHT)))
+                {
+                    for (int i = 0; i < V.labyrinthMatrixRows; i++)
+                    {
+                        for (int j = 0; j < V.labyrinthMatrixColumns; j++)
+                        {
+                            if (V.labyrinthMatrix[i, j] == '1' || V.labyrinthMatrix[i, j] == 'I')
+                            {
+                                if (new Rectangle(new Point(i, j), C.PIXELSXPOINT).Intersects(new Rectangle(position.X, position.Y, C.BULLETWIDTH, C.BULLETHEIGHT)))
+                                {
+                                    PutInStartPosition();
+                                }
+                            }
+                        }
+                    }
+                }
+                */
+                position.X += XSpeed;
+                position.Y += YSpeed;
+                base.Update(gameTime);
+            }
         }
-
-        public bool IsTouchingBottom(Sprite player)
-        {
-            return this.Rectangle.Top < player.Rectangle.Bottom &&
-              this.Rectangle.Bottom > player.Rectangle.Bottom &&
-              this.Rectangle.Right > player.Rectangle.Left &&
-              this.Rectangle.Left < player.Rectangle.Right;
-        }
-
-        #endregion
-    }
 }
 

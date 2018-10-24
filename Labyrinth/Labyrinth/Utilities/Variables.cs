@@ -11,8 +11,6 @@ namespace Labyrinth
 {
     public static class V // Variables
     {
-        
-
         public static int labyrinthMatrixColumns;
         public static int labyrinthMatrixRows;
         public static int[,] labyrinthMatrix;
@@ -37,9 +35,10 @@ namespace Labyrinth
 
         public static Texture2D cannonTexture;
 
-
         public static int score;
-        
+
+        public static Rectangle labyrinthPixels;         //prof
+        public static Random random = new Random();
 
     }
 }

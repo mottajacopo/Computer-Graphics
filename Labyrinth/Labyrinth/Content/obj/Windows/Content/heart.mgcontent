@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/heart.png</SourceFile>
-  <SourceTime>2018-10-18T20:03:39.9964336+02:00</SourceTime>
-  <DestFile>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/bin/Windows/Content/heart.xnb</DestFile>
-  <DestTime>2018-10-23T19:22:09.1241131+02:00</DestTime>
+  <SourceFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/heart.png</SourceFile>
+  <SourceTime>2018-10-24T17:31:20.1471425+02:00</SourceTime>
+  <DestFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/Content/heart.xnb</DestFile>
+  <DestTime>2018-10-24T17:32:29.3040071+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-09-23T23:55:52+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

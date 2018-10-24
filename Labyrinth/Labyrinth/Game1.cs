@@ -1,5 +1,4 @@
 ﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
@@ -8,6 +7,8 @@ using Labyrinth.Sprites;
 using Labyrinth.Manager;
 using System.Threading.Tasks;
 using System;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Media;
 
 namespace Labyrinth
 {
@@ -23,9 +24,12 @@ namespace Labyrinth
         public List<Cannon> _cannon = new List<Cannon>();
 
         private Dictionary<string, Animation> animations;
-        private float timer;
+        
         private SpriteFont font;
         bool check = false; // need for death count check
+
+        private float timer = 1.5f;         //Initialize a 10 second timer
+        const float TIMER = 1.5f;
 
         private Random r = new Random();
 
@@ -41,6 +45,7 @@ namespace Labyrinth
 
             graphics.PreferredBackBufferWidth = C.MAINWINDOW.X;
             graphics.PreferredBackBufferHeight = C.MAINWINDOW.Y;
+            this.IsMouseVisible = true;
 
             graphics.ApplyChanges();
 
@@ -52,6 +57,7 @@ namespace Labyrinth
         {
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            Services.AddService(typeof(SpriteBatch), spriteBatch);  //prof
 
             C.brickWall = Content.Load<Texture2D>("mossy");
             C.brickGrass = Content.Load<Texture2D>("grass");
@@ -71,12 +77,21 @@ namespace Labyrinth
             C.cannonLeftUp = Content.Load<Texture2D>("Cannon/cannonLeftUp");
             C.cannonUp = Content.Load<Texture2D>("Cannon/cannonUp");
 
+            C.bulletTexture = Content.Load<Texture2D>("Bullet");            //prof
+            C.explosion = Content.Load<SoundEffect>("Prof/explosion");      //prof
+            C.newBullet = Content.Load<SoundEffect>("Prof/newBullet");      //prof
+            C.backMusic = Content.Load<Song>("Prof/background");            //prof
+
+            MediaPlayer.Play(C.backMusic);
+
+            /*
             Texture2D[] values = new Texture2D[]{ C.cannonRightUp, C.cannonRight, C.cannonRightDown, C.cannonDown, C.cannonLeftDown,
                             C.cannonLeft, C.cannonLeftUp, C.cannonUp };
             V.cannonTexture = values[r.Next(0, 2)];
-            //V.cannonTexture = C.cannonRight;
+            */
+            V.cannonTexture = C.cannonRightUp;
 
-            ReadLabyrinthSpec(V.labyrinthMatrix, C.LabyrinthPathName);
+           ReadLabyrinthSpec(V.labyrinthMatrix, C.LabyrinthPathName);
             _map = FillLabyrinth(spriteBatch, _map , _cannon);
 
             V.currentHeroPosition = V.labEnter[0];
@@ -125,7 +140,6 @@ namespace Labyrinth
 
         protected override void UnloadContent()
         {
-
         }
 
         private void Restart()
@@ -136,7 +150,6 @@ namespace Labyrinth
             check = false;
             _player = new List<Player>()
             {
-                
 
                 new Player(animations)
                 {
@@ -159,13 +172,25 @@ namespace Labyrinth
 
                 }
             );
-            
         }
 
         protected override void Update(GameTime gameTime)
         {
-            timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            timer -= elapsed;
 
+            if (timer < 0)
+            {
+                DoGameLogic(); //prof
+                //Timer expired, execute action
+                timer = TIMER;   //Reset Timer
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+            {
+                    DoGameLogic(); //prof
+            }
+
+           
             foreach (var player in _player)
             {
                 player.Update(gameTime, _player, _map);
@@ -177,7 +202,6 @@ namespace Labyrinth
                     check = true;
                     
                 }
-                
             }
 
             foreach (var cannon in _cannon)
@@ -185,13 +209,17 @@ namespace Labyrinth
                 cannon.Update(gameTime, _cannon, _map);
             }
 
-            if (timer > 1)
-            {
-                // do something
-            }
-
             base.Update(gameTime);
         }
+
+        private void DoGameLogic()
+        {
+            foreach (var cannon in _cannon)
+            {
+                Components.Add(new Bullets(this, ref C.bulletTexture, cannon));
+            }
+        }
+
 
         protected override void Draw(GameTime gameTime)
         {
@@ -221,7 +249,9 @@ namespace Labyrinth
 
             spriteBatch.End();
 
+            spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.NonPremultiplied);
             base.Draw(gameTime);
+            spriteBatch.End();
         }
     }
 }

@@ -14,18 +14,12 @@ namespace Labyrinth.Sprites
 {
     public class Player : Sprite
     {
-        #region Fields
 
         protected AnimationManager _animationManager;
         protected Dictionary<string, Animation> _animations;
-        protected int offset = 8;
+        protected int offset = 10;
         public bool hasDied = false;
         protected float _health;
-        
-
-        #endregion
-
-        #region Properties
 
         public Input Input;
 
@@ -52,10 +46,6 @@ namespace Labyrinth.Sprites
 
         public float Speed = 1f;
         public Vector2 Velocity;
-
-        #endregion
-
-        #region Methods
 
         public override void Draw(SpriteBatch spriteBatch)
         {
@@ -163,8 +153,6 @@ namespace Labyrinth.Sprites
                     }
                 }
 
-
-
                 if (map.ID == '0')
                 {
                     if (IsTouchingLeft(map) || IsTouchingRight(map) || IsTouchingTop(map) || IsTouchingBottom(map))
@@ -193,7 +181,7 @@ namespace Labyrinth.Sprites
 
         public bool IsTouchingLeft(Map map)
         {
-            return this.Rectangle.Right + this.Velocity.X > map.Rectangle.Left &&
+            return this.Rectangle.Right + this.Velocity.X > map.Rectangle.Left  &&
               this.Rectangle.Left < map.Rectangle.Left &&
               this.Rectangle.Bottom > map.Rectangle.Top &&
               this.Rectangle.Top < map.Rectangle.Bottom;
@@ -201,7 +189,7 @@ namespace Labyrinth.Sprites
 
         public bool IsTouchingRight(Map map)
         {
-            return this.Rectangle.Left + this.Velocity.X < map.Rectangle.Right  &&
+            return this.Rectangle.Left + this.Velocity.X < map.Rectangle.Right + offset &&
               this.Rectangle.Right > map.Rectangle.Right &&
               this.Rectangle.Bottom > map.Rectangle.Top &&
               this.Rectangle.Top < map.Rectangle.Bottom;
@@ -222,8 +210,6 @@ namespace Labyrinth.Sprites
               this.Rectangle.Right > map.Rectangle.Left &&
               this.Rectangle.Left < map.Rectangle.Right;
         }
-
-        #endregion
     }
 }
 

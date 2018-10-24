@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Prof/background.mp3</SourceFile>
+  <SourceTime>2018-10-24T12:01:24+02:00</SourceTime>
+  <DestFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/Content/Prof/background.xnb</DestFile>
+  <DestTime>2018-10-24T19:00:05.7065579+02:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2018-09-23T23:55:52+02:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2018-09-23T23:55:52+02:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/Content/Prof/background.wma</string>
+  </BuildOutput>
+</PipelineBuildEvent>

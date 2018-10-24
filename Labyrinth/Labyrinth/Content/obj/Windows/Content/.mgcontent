@@ -4,36 +4,48 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Cannon/cannonDown.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Cannon/cannonLeft.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Cannon/cannonLeftDown.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Cannon/cannonLeftUp.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Cannon/cannonRight.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Cannon/cannonRightDown.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Cannon/cannonRightUp.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Cannon/cannonUp.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/diamante.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/diamante2.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/door.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/door2.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Fonts/Font.spritefont</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/grass.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/heart.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/lava.jpg</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/mossy.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Player/ZeldaDown.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Player/ZeldaDownRed.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Player/ZeldaHasDied.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Player/ZeldaLeft.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Player/ZeldaLeftRed.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Player/ZeldaRight.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Player/ZeldaRightRed.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Player/ZeldaUp.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Player/ZeldaUpRed.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/Rip.png</File>
-    <File>C:/Users/insan/Desktop/Labyrinth/Labyrinth/Content/wood.jpg</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Bullet.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannonDown.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannonLeft.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannonLeftDown.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannonLeftUp.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannonRight.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannonRightDown.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannonRightUp.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Cannon/cannonUp.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/diamante.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/diamante2.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/door.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/door2.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Fonts/Font.spritefont</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/grass.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/heart.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/lava.jpg</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/mossy.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaDown.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaDownRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaHasDied.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaLeft.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaLeftRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaRight.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaRightRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaUp.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaUpRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Prof/background.mp3</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Prof/Bullet.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Prof/explosion.wav</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Prof/newBullet.wav</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Prof/SpriteFont.spritefont</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Rip.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/wood.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
