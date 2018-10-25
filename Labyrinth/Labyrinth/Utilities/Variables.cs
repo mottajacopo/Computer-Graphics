@@ -44,10 +44,9 @@ namespace Labyrinth
 
         public static List<Sprite> spriteList = new List<Sprite>(); // list for sprite (es . grave)
         public static List<Cannon> cannonList = new List<Cannon>();
-        public static List<Bullets> bulletsList = new List<Bullets>();
+        public static List<Bullet> bulletsList = new List<Bullet>();
         public static List<Player> playerList;
         public static List<Map> mapList = new List<Map>();
-        public static bool isVisible;
 
     }
 }

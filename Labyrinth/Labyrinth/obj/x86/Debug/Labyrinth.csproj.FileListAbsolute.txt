@@ -213,5 +213,6 @@ C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Prof\
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Prof\newBullet.xnb
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Prof\SpriteFont.xnb
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Bullet.xnb
-C:\Git\Computer-Graphics\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csprojResolveAssemblyReference.cache
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csprojAssemblyReference.cache
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csproj.CopyComplete
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\trasparent.xnb

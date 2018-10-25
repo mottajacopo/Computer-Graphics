@@ -108,13 +108,13 @@ namespace Labyrinth.Sprites
             _animationManager = new AnimationManager(_animations.First().Value);
         }
 
-        public void Update(GameTime gameTime, List<Player> player, List<Map> _map)
+        public void Update(GameTime gameTime)
         {
             float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
             Move();
 
-            foreach (var map in _map)
+            foreach (var map in V.mapList)
             {
                 if (map.ID == '1' || map.ID == 'C')
                 {
@@ -139,14 +139,12 @@ namespace Labyrinth.Sprites
                         if(Health > 0)
                         {
                             Health = Math.Max(0f,Health-deltaTime);
-                            //V.score += 15;
                             V.playerHealth = (int)Health * 20;
                         }
                         else
                         {
                             this.hasDied = true;
                             deltaTime = 0;
-                            //V.score += 50;
                             V.deathHeroPoisition = this.Position;  // save death position
                             this.Velocity.X = 0;
                             this.Velocity.Y = 0;

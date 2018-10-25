@@ -1,3 +1,0 @@
-C:\Git\WorkRepository\VisualStudio\Example_lab\Example_lab\obj\x86\Debug\Labyrinth.csproj.CoreCompileInputs.cache
-C:\Git\WorkRepository\VisualStudio\Example_lab\Example_lab\obj\x86\Debug\Example_lab.exe
-C:\Git\WorkRepository\VisualStudio\Example_lab\Example_lab\obj\x86\Debug\Example_lab.pdb

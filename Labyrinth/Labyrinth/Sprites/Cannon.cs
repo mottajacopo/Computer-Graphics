@@ -14,7 +14,6 @@ namespace Labyrinth.Sprites
 {
     public class Cannon : Sprite
     {
-
         protected AnimationManager _animationManager;
         protected Dictionary<string, Animation> _animations;
         protected int offset = 20;
@@ -45,9 +44,9 @@ namespace Labyrinth.Sprites
             spriteBatch.Draw(_texture, new Rectangle((int)Position.X, (int)Position.Y, 40, 40), Color.White);
         }
 
-        public void Update(GameTime gameTime, List<Cannon> cannon, List<Map> _map)
+        public void Update(GameTime gameTime)
         {
-            foreach (var map in _map)
+            foreach (var map in V.mapList)
             {
                 if (map.ID == '1')
                 {

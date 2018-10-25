@@ -18,18 +18,12 @@ namespace Labyrinth
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        //private List<Player> _player;
-        //private List<Map> _map = new List<Map>();
-        //public List<Sprite> _sprite = new List<Sprite>(); // list for sprite (es . grave)
-        //public List<Cannon> _cannon = new List<Cannon>();
-        //public List<Bullets> _bullets = new List<Bullets>();
-
         private Dictionary<string, Animation> animations;
         
         private SpriteFont font;
         bool check = false; // need for death count check
 
-        private float timer = 1.5f;         //Initialize a 10 second timer
+        private float timer = 1.5f;         //timer for bullets
         const float TIMER = 1.5f;
 
         private Random r = new Random();
@@ -58,7 +52,6 @@ namespace Labyrinth
         {
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            Services.AddService(typeof(SpriteBatch), spriteBatch);  //prof
 
             C.brickWall = Content.Load<Texture2D>("mossy");
             C.brickGrass = Content.Load<Texture2D>("grass");
@@ -78,16 +71,15 @@ namespace Labyrinth
             C.cannonLeftUp = Content.Load<Texture2D>("Cannon/cannonLeftUp");
             C.cannonUp = Content.Load<Texture2D>("Cannon/cannonUp");
 
-            C.bulletTexture = Content.Load<Texture2D>("Bullet");            //prof
+            C.bulletTexture = Content.Load<Texture2D>("Bullet");           
             C.bulletTrasp = Content.Load<Texture2D>("trasparent");
-            C.explosion = Content.Load<SoundEffect>("Prof/explosion");      //prof
-            C.newBullet = Content.Load<SoundEffect>("Prof/newBullet");      //prof
-            C.backMusic = Content.Load<Song>("Prof/background");            //prof
+            C.explosion = Content.Load<SoundEffect>("Prof/explosion");     
+            C.newBullet = Content.Load<SoundEffect>("Prof/newBullet");    
+            C.backMusic = Content.Load<Song>("Prof/background");          
+           
 
-            
-
-            MediaPlayer.Play(C.backMusic);
-            MediaPlayer.IsRepeating = true;
+            //MediaPlayer.Play(C.backMusic);
+            //MediaPlayer.IsRepeating = true;
 
             /*
             Texture2D[] values = new Texture2D[]{ C.cannonRightUp, C.cannonRight, C.cannonRightDown, C.cannonDown, C.cannonLeftDown,
@@ -97,10 +89,9 @@ namespace Labyrinth
             V.cannonTexture = C.cannonRightUp;
 
            ReadLabyrinthSpec(V.labyrinthMatrix, C.LabyrinthPathName);
-            V.mapList = FillLabyrinth(spriteBatch, V.mapList, V.cannonList);
+           FillLabyrinth(spriteBatch);
 
             V.currentHeroPosition = V.labEnter[0];
-
 
             V.animationDown = "WalkDown";
             V.animationUp = "WalkUp";
@@ -186,31 +177,40 @@ namespace Labyrinth
 
             if (timer < 0)
             {
-                DoGameLogic(); //prof
-                //Timer expired, execute action
-                timer = TIMER;   //Reset Timer
+                DoGameLogic();
+                timer = TIMER;   
             }
 
-           
             foreach (var player in V.playerList)
             {
-                player.Update(gameTime, V.playerList, V.mapList);
+                player.Update(gameTime);
 
-                
                 if(player.hasDied && !check)
                 {
                     Task.Delay(500).ContinueWith(t => Restart());  //delay for death animation show
                     check = true;
-                    
                 }
             }
 
            
             foreach (var cannon in V.cannonList)
             {
-                cannon.Update(gameTime, V.cannonList, V.mapList);
+                cannon.Update(gameTime);
             }
+
+
+            foreach (var bullet in V.bulletsList)
+            {
+                bullet.Update(gameTime);
+            }
+
             
+            // remove bullet when wall collision
+            for (int i = V.bulletsList.Count - 1; i >= 0; --i)
+            {
+                if (!V.bulletsList[i].isVisible)
+                    V.bulletsList.RemoveAt(i);
+            }
 
             base.Update(gameTime);
         }
@@ -219,10 +219,8 @@ namespace Labyrinth
         {
             foreach (var cannon in V.cannonList)
             {
-                Components.Add(new Bullets(this, ref C.bulletTexture, cannon ));
-                
+                V.bulletsList.Add(new Bullet(C.bulletTexture, cannon));
             }
-            
         }
 
 
@@ -241,6 +239,9 @@ namespace Labyrinth
             foreach (var player in V.playerList)
                 player.Draw(spriteBatch);
 
+            foreach (var bullet in V.bulletsList)
+                bullet.Draw(spriteBatch);
+
             if (V.spriteList.Count >0)  // draw sprite different from player ( es grave )
             {
                 foreach (var sprite in V.spriteList)
@@ -254,9 +255,8 @@ namespace Labyrinth
 
             spriteBatch.End();
 
-            spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.NonPremultiplied);
             base.Draw(gameTime);
-            spriteBatch.End();
+
         }
     }
 }

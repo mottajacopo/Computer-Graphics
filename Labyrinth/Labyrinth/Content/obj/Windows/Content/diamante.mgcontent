@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/diamante.png</SourceFile>
-  <SourceTime>2018-10-25T07:34:51.7881744+02:00</SourceTime>
+  <SourceTime>2018-10-24T17:31:20.1315186+02:00</SourceTime>
   <DestFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/Content/diamante.xnb</DestFile>
-  <DestTime>2018-10-25T07:35:40.0937247+02:00</DestTime>
+  <DestTime>2018-10-25T19:23:17.7268491+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-09-23T23:55:52+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

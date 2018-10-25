@@ -79,7 +79,7 @@ namespace Labyrinth
             }
         }
 
-        public List<Map> FillLabyrinth(SpriteBatch sp, List<Map> _map , List<Cannon> _cannon)
+        public void FillLabyrinth(SpriteBatch sp)
         {
             Texture2D brick = C.brickGrass; // lo uso come brick defauld
 
@@ -96,7 +96,7 @@ namespace Labyrinth
                         case '0':
                             
                             brick = C.brickGrass;
-                            _map.Add(new Map(brick)
+                            V.mapList.Add(new Map(brick)
                             {
                                 Position = H.ToVector2(H.BrickPosition()),
                                 ID = '0',
@@ -107,7 +107,7 @@ namespace Labyrinth
                             brick = C.brickWall;
 
 
-                            _map.Add(new Map(brick)
+                            V.mapList.Add(new Map(brick)
                             {
                                 Position = H.ToVector2(H.BrickPosition()),
                                 ID = '1',
@@ -117,7 +117,7 @@ namespace Labyrinth
                         case 'I':
                             brick = C.brickStart;
 
-                            _map.Add(new Map(brick)
+                            V.mapList.Add(new Map(brick)
                             {
                                 Position = H.ToVector2(H.BrickPosition()),
                                 ID = 'I',
@@ -126,7 +126,7 @@ namespace Labyrinth
                         case 'L':
                             brick = C.brickLava;
 
-                            _map.Add(new Map(brick)
+                            V.mapList.Add(new Map(brick)
                             {
                                 Position = H.ToVector2(H.BrickPosition()),
                                 ID = 'L',
@@ -135,7 +135,7 @@ namespace Labyrinth
                         case 'F':
                             brick = C.brickEnd2;
 
-                            _map.Add(new Map(brick)
+                            V.mapList.Add(new Map(brick)
                             {
                                 Position = H.ToVector2(H.BrickPosition()),
                                 ID = 'F',
@@ -144,7 +144,7 @@ namespace Labyrinth
                         case 'D':
                             brick = C.brickDiamond;
 
-                            _map.Add(new Map(brick)
+                            V.mapList.Add(new Map(brick)
                             {
                                 Position = H.ToVector2(H.BrickPosition()),
                                 ID = 'D',
@@ -153,7 +153,7 @@ namespace Labyrinth
                         case 'E':
                             brick = C.brickEnd;
 
-                            _map.Add(new Map(brick)
+                            V.mapList.Add(new Map(brick)
                             {
                                 Position = H.ToVector2(H.BrickPosition()),
                                 ID = 'E',
@@ -163,22 +163,20 @@ namespace Labyrinth
                         case 'C':
 
                             brick = C.brickGrass;
-                            _map.Add(new Map(brick)
+                            V.mapList.Add(new Map(brick)
                             {
                                 Position = H.ToVector2(H.BrickPosition()),
                                 ID = 'C',
                             });
 
-                            _cannon.Add(new Cannon(V.cannonTexture)
+                            V.cannonList.Add(new Cannon(V.cannonTexture)
                             {
                                 Position = H.ToVector2(H.BrickPosition()),
                             });
                             break;
                     }
-
                 }
             }
-            return _map;
         }
     }
 }
