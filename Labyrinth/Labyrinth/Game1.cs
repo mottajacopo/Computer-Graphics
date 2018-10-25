@@ -78,15 +78,10 @@ namespace Labyrinth
             C.backMusic = Content.Load<Song>("Prof/background");          
            
 
-            //MediaPlayer.Play(C.backMusic);
-            //MediaPlayer.IsRepeating = true;
+            MediaPlayer.Play(C.backMusic);
+            MediaPlayer.IsRepeating = true;
 
-            /*
-            Texture2D[] values = new Texture2D[]{ C.cannonRightUp, C.cannonRight, C.cannonRightDown, C.cannonDown, C.cannonLeftDown,
-                            C.cannonLeft, C.cannonLeftUp, C.cannonUp };
-            V.cannonTexture = values[r.Next(0, 2)];
-            */
-            V.cannonTexture = C.cannonRightUp;
+            V.cannonTexture = C.cannonRightUp;  // default texture for cannon
 
            ReadLabyrinthSpec(V.labyrinthMatrix, C.LabyrinthPathName);
            FillLabyrinth(spriteBatch);
