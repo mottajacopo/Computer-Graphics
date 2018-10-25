@@ -15,8 +15,6 @@ namespace Labyrinth.Sprites
     public class Cannon : Sprite
     {
 
-       
-
         protected AnimationManager _animationManager;
         protected Dictionary<string, Animation> _animations;
         protected int offset = 20;
@@ -30,10 +28,6 @@ namespace Labyrinth.Sprites
 
         //protected bool hasDead = false;
 
-
-
-
-
         public override Vector2 Position
         {
             get { return _position; }
@@ -45,9 +39,6 @@ namespace Labyrinth.Sprites
                     _animationManager.Position = _position;
             }
         }
-        
-
-        
 
         public override void Draw(SpriteBatch spriteBatch)
         {

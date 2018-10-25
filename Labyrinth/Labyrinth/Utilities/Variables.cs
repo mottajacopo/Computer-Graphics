@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Labyrinth.Models;
+using Labyrinth.Sprites;
 
 namespace Labyrinth
 {
@@ -39,6 +41,13 @@ namespace Labyrinth
 
         public static Rectangle labyrinthPixels;         //prof
         public static Random random = new Random();
+
+        public static List<Sprite> spriteList = new List<Sprite>(); // list for sprite (es . grave)
+        public static List<Cannon> cannonList = new List<Cannon>();
+        public static List<Bullets> bulletsList = new List<Bullets>();
+        public static List<Player> playerList;
+        public static List<Map> mapList = new List<Map>();
+        public static bool isVisible;
 
     }
 }

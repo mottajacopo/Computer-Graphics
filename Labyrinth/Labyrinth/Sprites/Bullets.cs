@@ -21,12 +21,15 @@ namespace Labyrinth.Sprites
             protected int XSpeed;
             protected Random random;
             protected SpriteBatch sBatch;
+            
 
-            public Bullets(Game game, ref Texture2D theTexture ,Cannon _cannon) : base(game)
+
+        public Bullets(Game game, ref Texture2D theTexture ,Cannon _cannon) : base(game)
             {
                 this.texture = theTexture;
                 this.position = new Point();
 
+                V.isVisible = true;
                 sBatch = (SpriteBatch)Game.Services.GetService(typeof(SpriteBatch));
 
                 spriteRectangle = new Rectangle(0, 0, C.BULLETWIDTH, C.BULLETHEIGHT);
@@ -35,13 +38,22 @@ namespace Labyrinth.Sprites
 
                 PutInStartPosition(_cannon);
             }
-            public void PutInStartPosition(Cannon _cannon)
-            {
-                position.X = (int)_cannon.Position.X;
-                position.Y = (int)_cannon.Position.Y;
 
-                XSpeed = _cannon.speedX;
-                YSpeed = _cannon.speedY;
+        public virtual Rectangle Rectangle
+        {
+            get
+            {
+                return new Rectangle(0, 0, C.BULLETWIDTH, C.BULLETHEIGHT);
+            }
+        }
+
+        public void PutInStartPosition(Cannon _cannon)
+            {
+                position.X = (int)_cannon.Position.X + 16;
+                position.Y = (int)_cannon.Position.Y + 10;
+
+                XSpeed = _cannon.speedX * 2;
+                YSpeed = _cannon.speedY * 2;
             }
             public override void Draw(GameTime gameTime)
             {
@@ -51,28 +63,43 @@ namespace Labyrinth.Sprites
 
             public override void Update(GameTime gameTime)
             {
-            /*
-                if (V.labyrinthPixels.Intersects(new Rectangle(position.X, position.Y, C.BULLETWIDTH, C.BULLETHEIGHT)))
+            
+            foreach (var player in V.playerList)
+            {
+                
+                if (player.Rectangle.Intersects(new Rectangle(position.X, position.Y, C.BULLETWIDTH, C.BULLETHEIGHT)))
                 {
-                    for (int i = 0; i < V.labyrinthMatrixRows; i++)
+                    V.playerHealth = V.playerHealth - 1;
+
+                    V.deathHeroPoisition = player.Position;
+                    if (V.playerHealth < 0)
                     {
-                        for (int j = 0; j < V.labyrinthMatrixColumns; j++)
-                        {
-                            if (V.labyrinthMatrix[i, j] == '1' || V.labyrinthMatrix[i, j] == 'I')
-                            {
-                                if (new Rectangle(new Point(i, j), C.PIXELSXPOINT).Intersects(new Rectangle(position.X, position.Y, C.BULLETWIDTH, C.BULLETHEIGHT)))
-                                {
-                                    PutInStartPosition();
-                                }
-                            }
-                        }
+                        player.hasDied = true;
                     }
+                    
                 }
-                */
+            }
+
+            foreach (var map in V.mapList)
+            {
+                if (map.ID == '1')
+                {
+                    if (map.Rectangle.Intersects(new Rectangle(position.X, position.Y, C.BULLETWIDTH, C.BULLETHEIGHT)))
+                    {
+                        XSpeed = 0;
+                        YSpeed = 0;
+                        V.isVisible = false;
+                        
+                        
+                    } 
+                }
+            }
+            
                 position.X += XSpeed;
                 position.Y += YSpeed;
                 base.Update(gameTime);
+
             }
-        }
+    }
 }
 

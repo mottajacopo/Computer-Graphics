@@ -37,9 +37,11 @@
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Prof/newBullet.wav</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Prof/SpriteFont.spritefont</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Rip.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/trasparent.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/wood.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

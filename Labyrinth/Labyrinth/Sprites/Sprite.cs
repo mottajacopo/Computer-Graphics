@@ -11,14 +11,13 @@ using Labyrinth.Sprites;
 using Labyrinth.Manager;
 
 namespace Labyrinth.Sprites
-
 {
     public class Sprite
     {
         protected Vector2 _position;
         protected Texture2D _texture;
 
-        public Rectangle Rectangle
+        public virtual Rectangle Rectangle
         {
             get
             {

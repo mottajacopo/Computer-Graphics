@@ -18,10 +18,11 @@ namespace Labyrinth
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        private List<Player> _player;
-        private List<Map> _map = new List<Map>();
-        public List<Sprite> _sprite = new List<Sprite>(); // list for sprite (es . grave)
-        public List<Cannon> _cannon = new List<Cannon>();
+        //private List<Player> _player;
+        //private List<Map> _map = new List<Map>();
+        //public List<Sprite> _sprite = new List<Sprite>(); // list for sprite (es . grave)
+        //public List<Cannon> _cannon = new List<Cannon>();
+        //public List<Bullets> _bullets = new List<Bullets>();
 
         private Dictionary<string, Animation> animations;
         
@@ -78,11 +79,15 @@ namespace Labyrinth
             C.cannonUp = Content.Load<Texture2D>("Cannon/cannonUp");
 
             C.bulletTexture = Content.Load<Texture2D>("Bullet");            //prof
+            C.bulletTrasp = Content.Load<Texture2D>("trasparent");
             C.explosion = Content.Load<SoundEffect>("Prof/explosion");      //prof
             C.newBullet = Content.Load<SoundEffect>("Prof/newBullet");      //prof
             C.backMusic = Content.Load<Song>("Prof/background");            //prof
 
+            
+
             MediaPlayer.Play(C.backMusic);
+            MediaPlayer.IsRepeating = true;
 
             /*
             Texture2D[] values = new Texture2D[]{ C.cannonRightUp, C.cannonRight, C.cannonRightDown, C.cannonDown, C.cannonLeftDown,
@@ -92,7 +97,7 @@ namespace Labyrinth
             V.cannonTexture = C.cannonRightUp;
 
            ReadLabyrinthSpec(V.labyrinthMatrix, C.LabyrinthPathName);
-            _map = FillLabyrinth(spriteBatch, _map , _cannon);
+            V.mapList = FillLabyrinth(spriteBatch, V.mapList, V.cannonList);
 
             V.currentHeroPosition = V.labEnter[0];
 
@@ -119,7 +124,7 @@ namespace Labyrinth
                 { "HasDied", new Animation(Content.Load<Texture2D>("Player/ZeldaHasDied"), 1) },
             };
 
-            _player = new List<Player>()
+            V.playerList = new List<Player>()
             {
                 new Player(animations)
                 {
@@ -148,7 +153,7 @@ namespace Labyrinth
             V.playerHealth = 100;
 
             check = false;
-            _player = new List<Player>()
+            V.playerList = new List<Player>()
             {
 
                 new Player(animations)
@@ -165,7 +170,7 @@ namespace Labyrinth
                 },
             };
 
-            _sprite.Add(  // add new grave every time player dies
+            V.spriteList.Add(  // add new grave every time player dies
                 new Sprite(C.Grave)
                 {
                     Position = V.deathHeroPoisition,
@@ -185,15 +190,11 @@ namespace Labyrinth
                 //Timer expired, execute action
                 timer = TIMER;   //Reset Timer
             }
-            if (Keyboard.GetState().IsKeyDown(Keys.Space))
-            {
-                    DoGameLogic(); //prof
-            }
 
            
-            foreach (var player in _player)
+            foreach (var player in V.playerList)
             {
-                player.Update(gameTime, _player, _map);
+                player.Update(gameTime, V.playerList, V.mapList);
 
                 
                 if(player.hasDied && !check)
@@ -204,20 +205,24 @@ namespace Labyrinth
                 }
             }
 
-            foreach (var cannon in _cannon)
+           
+            foreach (var cannon in V.cannonList)
             {
-                cannon.Update(gameTime, _cannon, _map);
+                cannon.Update(gameTime, V.cannonList, V.mapList);
             }
+            
 
             base.Update(gameTime);
         }
 
         private void DoGameLogic()
         {
-            foreach (var cannon in _cannon)
+            foreach (var cannon in V.cannonList)
             {
-                Components.Add(new Bullets(this, ref C.bulletTexture, cannon));
+                Components.Add(new Bullets(this, ref C.bulletTexture, cannon ));
+                
             }
+            
         }
 
 
@@ -227,18 +232,18 @@ namespace Labyrinth
 
             spriteBatch.Begin();
 
-            foreach (var map in _map)
+            foreach (var map in V.mapList)
                 map.Draw(spriteBatch);
 
-            foreach (var cannon in _cannon)
+            foreach (var cannon in V.cannonList)
                 cannon.Draw(spriteBatch);
 
-            foreach (var player in _player)
+            foreach (var player in V.playerList)
                 player.Draw(spriteBatch);
 
-            if (_sprite.Count >0)  // draw sprite different from player ( es grave )
+            if (V.spriteList.Count >0)  // draw sprite different from player ( es grave )
             {
-                foreach (var sprite in _sprite)
+                foreach (var sprite in V.spriteList)
                     sprite.Draw(spriteBatch);
             }
 

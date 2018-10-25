@@ -22,7 +22,7 @@ namespace Labyrinth
         public static Texture2D brickWall, brickGrass, brickStart, brickEnd, brickLava, brickDiamond, brickEnd2;
         public static Texture2D Grave;
         public static Texture2D cannonRightUp, cannonRight, cannonRightDown , cannonDown , cannonLeftDown, cannonLeft, cannonLeftUp, cannonUp;
-        public static Texture2D bulletTexture;
+        public static Texture2D bulletTexture , bulletTrasp;
 
         public static SoundEffect explosion;            // prof
         public static SoundEffect newBullet;            // prof

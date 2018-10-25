@@ -115,9 +115,7 @@ C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.DXGI.
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.XInput.xml
-C:\Git\Computer-Graphics\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csprojAssemblyReference.cache
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csproj.CoreCompileInputs.cache
-C:\Git\Computer-Graphics\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csproj.CopyComplete
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.exe
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.pdb
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon10.30.xnb
@@ -215,3 +213,5 @@ C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Prof\
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Prof\newBullet.xnb
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Prof\SpriteFont.xnb
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Bullet.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csprojResolveAssemblyReference.cache
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\trasparent.xnb
