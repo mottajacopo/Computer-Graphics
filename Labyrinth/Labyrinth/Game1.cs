@@ -60,7 +60,7 @@ namespace Labyrinth
             C.brickStart = Content.Load<Texture2D>("grass");
             C.brickEnd = Content.Load<Texture2D>("door");
             C.brickEnd2 = Content.Load<Texture2D>("door2");
-            C.Grave = Content.Load<Texture2D>("Link blue/LinkSkeleton");
+            C.Grave = Content.Load<Texture2D>("Player/Rip");
 
             C.cannonRightUp = Content.Load<Texture2D>("Cannon/cannonRightUp");
             C.cannonRight = Content.Load<Texture2D>("Cannon/cannonRight");

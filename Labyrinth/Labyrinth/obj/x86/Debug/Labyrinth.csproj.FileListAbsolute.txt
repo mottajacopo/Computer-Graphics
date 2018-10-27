@@ -239,3 +239,4 @@ C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link 
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkUpRed.xnb
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkHasDied.xnb
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkSkeleton.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\Rip.xnb

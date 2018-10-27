@@ -14,7 +14,6 @@ namespace Labyrinth.Sprites
 {
     public class Player : Sprite
     {
-
         protected AnimationManager _animationManager;
         protected Dictionary<string, Animation> _animations;
         protected int offset = 10;
