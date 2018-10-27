@@ -129,7 +129,6 @@ D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphic
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Fonts\Font.xnb
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaHasDied3.xnb
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Fonts\Font.xnb
-C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Rip.xnb
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaHasDied.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaHasDied3.xnb
 D:\Università\Laurea Magistrale\Computers Graphic Architecture\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonDown.xnb
@@ -215,4 +214,28 @@ C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Prof\
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Bullet.xnb
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csprojAssemblyReference.cache
 C:\Git\Computer-Graphics\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csproj.CopyComplete
-C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\trasparent.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkAttack.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkAttackDown.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkAttackLeft.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkAttackRight.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkAttackUp.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkBurn.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkBurndown.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkBurnLeft.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkBurnRight.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkBurnUp.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkWalk.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkWalkDown.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkWalkLeft.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkWalkRight.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkWalkUp.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkDown.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkLeft.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkRight.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkUp.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkDownRed.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkLeftRed.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkRightRed.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkUpRed.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkHasDied.xnb
+C:\Git\Computer-Graphics\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkSkeleton.xnb

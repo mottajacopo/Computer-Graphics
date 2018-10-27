@@ -21,7 +21,7 @@ namespace Labyrinth.Sprites
         {
             get
             {
-                return new Rectangle((int)Position.X, (int)Position.Y, 30, 30);
+                return new Rectangle((int)Position.X, (int)Position.Y, 40, 40);
             }
         }
 
@@ -46,7 +46,7 @@ namespace Labyrinth.Sprites
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(_texture, new Rectangle((int)Position.X, (int)Position.Y, 40, 40), Color.White);
+            spriteBatch.Draw(_texture, new Rectangle((int)Position.X, (int)Position.Y, _texture.Width, _texture.Height), Color.White);
         }
     }
 }

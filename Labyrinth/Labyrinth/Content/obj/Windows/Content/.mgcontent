@@ -21,6 +21,31 @@
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/grass.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/heart.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/lava.jpg</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkAttack.psd</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkAttackDown.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkAttackLeft.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkAttackRight.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkAttackUp.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkBurn.psd</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkBurndown.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkBurnLeft.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkBurnRight.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkBurnUp.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkDown.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkDownRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkHasDied.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkLeft.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkLeftRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkRight.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkRightRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkSkeleton.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkUp.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkUpRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkWalk.psd</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkWalkDown.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkWalkLeft.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkWalkRight.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkWalkUp.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/mossy.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaDown.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/ZeldaDownRed.png</File>
@@ -36,11 +61,32 @@
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Prof/explosion.wav</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Prof/newBullet.wav</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Prof/SpriteFont.spritefont</File>
-    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Rip.png</File>
-    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/trasparent.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/wood.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

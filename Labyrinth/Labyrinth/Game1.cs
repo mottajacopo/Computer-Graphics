@@ -60,7 +60,7 @@ namespace Labyrinth
             C.brickStart = Content.Load<Texture2D>("grass");
             C.brickEnd = Content.Load<Texture2D>("door");
             C.brickEnd2 = Content.Load<Texture2D>("door2");
-            C.Grave = Content.Load<Texture2D>("Rip");
+            C.Grave = Content.Load<Texture2D>("Link blue/LinkSkeleton");
 
             C.cannonRightUp = Content.Load<Texture2D>("Cannon/cannonRightUp");
             C.cannonRight = Content.Load<Texture2D>("Cannon/cannonRight");
@@ -71,15 +71,14 @@ namespace Labyrinth
             C.cannonLeftUp = Content.Load<Texture2D>("Cannon/cannonLeftUp");
             C.cannonUp = Content.Load<Texture2D>("Cannon/cannonUp");
 
-            C.bulletTexture = Content.Load<Texture2D>("Bullet");           
-            C.bulletTrasp = Content.Load<Texture2D>("trasparent");
+            C.bulletTexture = Content.Load<Texture2D>("Bullet");     
             C.explosion = Content.Load<SoundEffect>("Prof/explosion");     
             C.newBullet = Content.Load<SoundEffect>("Prof/newBullet");    
             C.backMusic = Content.Load<Song>("Prof/background");          
            
 
-            MediaPlayer.Play(C.backMusic);
-            MediaPlayer.IsRepeating = true;
+            //MediaPlayer.Play(C.backMusic);
+            //MediaPlayer.IsRepeating = true;
 
             V.cannonTexture = C.cannonRightUp;  // default texture for cannon
 
@@ -99,15 +98,15 @@ namespace Labyrinth
 
             animations = new Dictionary<string, Animation>()
             {
-                { "WalkRight", new Animation(Content.Load<Texture2D>("Player/ZeldaRight"), 3) },
-                { "WalkUp", new Animation(Content.Load<Texture2D>("Player/ZeldaUp"), 3) },
-                { "WalkDown", new Animation(Content.Load<Texture2D>("Player/ZeldaDown"), 3) },
-                { "WalkLeft", new Animation(Content.Load<Texture2D>("Player/ZeldaLeft"), 3) },
-                { "WalkRightRed", new Animation(Content.Load<Texture2D>("Player/ZeldaRightRed"), 3) },
-                { "WalkUpRed", new Animation(Content.Load<Texture2D>("Player/ZeldaUpRed"), 3) },
-                { "WalkDownRed", new Animation(Content.Load<Texture2D>("Player/ZeldaDownRed"), 3) },
-                { "WalkLeftRed", new Animation(Content.Load<Texture2D>("Player/ZeldaLeftRed"), 3) },
-                { "HasDied", new Animation(Content.Load<Texture2D>("Player/ZeldaHasDied"), 1) },
+                { "WalkRight", new Animation(Content.Load<Texture2D>("Link blue/LinkRight"), 3) },
+                { "WalkUp", new Animation(Content.Load<Texture2D>("Link blue/LinkUp"), 3) },
+                { "WalkDown", new Animation(Content.Load<Texture2D>("Link blue/LinkDown"), 3) },
+                { "WalkLeft", new Animation(Content.Load<Texture2D>("Link blue/LinkLeft"), 3) },
+                { "WalkRightRed", new Animation(Content.Load<Texture2D>("Link blue/LinkRightRed"), 3) },
+                { "WalkUpRed", new Animation(Content.Load<Texture2D>("Link blue/LinkUpRed"), 3) },
+                { "WalkDownRed", new Animation(Content.Load<Texture2D>("Link blue/LinkDownRed"), 3) },
+                { "WalkLeftRed", new Animation(Content.Load<Texture2D>("Link blue/LinkLeftRed"), 3) },
+                { "HasDied", new Animation(Content.Load<Texture2D>("Link blue/LinkHasDied"), 1) },
             };
 
             V.playerList = new List<Player>()
@@ -173,6 +172,7 @@ namespace Labyrinth
             if (timer < 0)
             {
                 DoGameLogic();
+                C.explosion.Play(volume: 0.1f, pitch: 0.0f, pan: 0.0f);
                 timer = TIMER;   
             }
 
@@ -205,6 +205,7 @@ namespace Labyrinth
             {
                 if (!V.bulletsList[i].isVisible)
                     V.bulletsList.RemoveAt(i);
+                    //C.explosion.Play();
             }
 
             base.Update(gameTime);
@@ -215,6 +216,7 @@ namespace Labyrinth
             foreach (var cannon in V.cannonList)
             {
                 V.bulletsList.Add(new Bullet(C.bulletTexture, cannon));
+                //C.newBullet.Play();
             }
         }
 
