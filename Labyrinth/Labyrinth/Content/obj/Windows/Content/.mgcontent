@@ -28,15 +28,23 @@
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkAttackUp.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkBurn.psd</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkDown.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkDown2.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkDownRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkDownRed2.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkHasDied.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkLeft.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkLeft2.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkLeftRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkLeftRed2.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkRight.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkRight2.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkRightRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkRightRed2.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkSkeleton.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkUp.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkUp2.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkUpRed.png</File>
+    <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkUpRed2.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkWalk.psd</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/mossy.png</File>
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Player/Rip.png</File>
@@ -57,6 +65,14 @@
     <File>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/wood.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -34,7 +34,7 @@ namespace Labyrinth.Models
 
             IsLooping = true;
 
-            FrameSpeed = 0.2f;
+            FrameSpeed = 0.1f;
         }
     }
 }

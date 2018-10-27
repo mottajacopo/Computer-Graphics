@@ -179,7 +179,7 @@ namespace Labyrinth.Sprites
 
         public bool IsTouchingLeft(Map map)
         {
-            return this.Rectangle.Right + this.Velocity.X > map.Rectangle.Left  &&
+            return this.Rectangle.Right + this.Velocity.X > map.Rectangle.Left - 5 &&
               this.Rectangle.Left < map.Rectangle.Left &&
               this.Rectangle.Bottom > map.Rectangle.Top &&
               this.Rectangle.Top < map.Rectangle.Bottom;
@@ -187,7 +187,7 @@ namespace Labyrinth.Sprites
 
         public bool IsTouchingRight(Map map)
         {
-            return this.Rectangle.Left + this.Velocity.X < map.Rectangle.Right + offset &&
+            return this.Rectangle.Left + this.Velocity.X < map.Rectangle.Right +15 &&
               this.Rectangle.Right > map.Rectangle.Right &&
               this.Rectangle.Bottom > map.Rectangle.Top &&
               this.Rectangle.Top < map.Rectangle.Bottom;
@@ -195,7 +195,7 @@ namespace Labyrinth.Sprites
 
         public bool IsTouchingTop(Map map)
         {
-            return this.Rectangle.Bottom + this.Velocity.Y > map.Rectangle.Top &&
+            return this.Rectangle.Bottom + this.Velocity.Y > map.Rectangle.Top - 10 &&
               this.Rectangle.Top < map.Rectangle.Top &&
               this.Rectangle.Right > map.Rectangle.Left &&
               this.Rectangle.Left < map.Rectangle.Right;
@@ -203,7 +203,7 @@ namespace Labyrinth.Sprites
 
         public bool IsTouchingBottom(Map map)
         {
-            return this.Rectangle.Top + this.Velocity.Y < map.Rectangle.Bottom  &&
+            return this.Rectangle.Top + this.Velocity.Y < map.Rectangle.Bottom  + 10 &&
               this.Rectangle.Bottom > map.Rectangle.Bottom &&
               this.Rectangle.Right > map.Rectangle.Left &&
               this.Rectangle.Left < map.Rectangle.Right;

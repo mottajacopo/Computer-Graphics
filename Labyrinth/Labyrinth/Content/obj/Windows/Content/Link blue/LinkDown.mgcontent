@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Link blue/LinkDown.png</SourceFile>
-  <SourceTime>2018-10-27T21:06:13.2374335+02:00</SourceTime>
+  <SourceTime>2018-10-27T21:52:41.385989+02:00</SourceTime>
   <DestFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/Content/Link blue/LinkDown.xnb</DestFile>
-  <DestTime>2018-10-27T21:06:39.9125527+02:00</DestTime>
+  <DestTime>2018-10-27T21:52:45.0236034+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-09-23T23:55:52+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -296,6 +296,18 @@
 /processorParam:TextureFormat=Color
 /build:Link blue/LinkDown.png
 
+#begin Link blue/LinkDown2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Link blue/LinkDown2.png
+
 #begin Link blue/LinkDownRed.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -307,6 +319,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Link blue/LinkDownRed.png
+
+#begin Link blue/LinkDownRed2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Link blue/LinkDownRed2.png
 
 #begin Link blue/LinkHasDied.png
 /importer:TextureImporter
@@ -332,6 +356,18 @@
 /processorParam:TextureFormat=Color
 /build:Link blue/LinkLeft.png
 
+#begin Link blue/LinkLeft2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Link blue/LinkLeft2.png
+
 #begin Link blue/LinkLeftRed.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -343,6 +379,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Link blue/LinkLeftRed.png
+
+#begin Link blue/LinkLeftRed2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Link blue/LinkLeftRed2.png
 
 #begin Link blue/LinkRight.png
 /importer:TextureImporter
@@ -356,6 +404,18 @@
 /processorParam:TextureFormat=Color
 /build:Link blue/LinkRight.png
 
+#begin Link blue/LinkRight2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Link blue/LinkRight2.png
+
 #begin Link blue/LinkRightRed.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -367,6 +427,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Link blue/LinkRightRed.png
+
+#begin Link blue/LinkRightRed2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Link blue/LinkRightRed2.png
 
 #begin Link blue/LinkSkeleton.png
 /importer:TextureImporter
@@ -392,6 +464,18 @@
 /processorParam:TextureFormat=Color
 /build:Link blue/LinkUp.png
 
+#begin Link blue/LinkUp2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Link blue/LinkUp2.png
+
 #begin Link blue/LinkUpRed.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -403,6 +487,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Link blue/LinkUpRed.png
+
+#begin Link blue/LinkUpRed2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Link blue/LinkUpRed2.png
 
 #begin Link blue/LinkWalk.psd
 /importer:TextureImporter

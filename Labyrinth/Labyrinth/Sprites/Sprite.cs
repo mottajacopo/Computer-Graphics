@@ -21,7 +21,7 @@ namespace Labyrinth.Sprites
         {
             get
             {
-                return new Rectangle((int)Position.X, (int)Position.Y, 30, 35);
+                return new Rectangle((int)Position.X, (int)Position.Y, 25, 25);
             }
         }
 

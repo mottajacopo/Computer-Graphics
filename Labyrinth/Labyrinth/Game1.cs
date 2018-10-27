@@ -98,14 +98,14 @@ namespace Labyrinth
 
             animations = new Dictionary<string, Animation>()
             {
-                { "WalkRight", new Animation(Content.Load<Texture2D>("Link blue/LinkRight"), 3) },
-                { "WalkUp", new Animation(Content.Load<Texture2D>("Link blue/LinkUp"), 3) },
-                { "WalkDown", new Animation(Content.Load<Texture2D>("Link blue/LinkDown"), 3) },
-                { "WalkLeft", new Animation(Content.Load<Texture2D>("Link blue/LinkLeft"), 3) },
-                { "WalkRightRed", new Animation(Content.Load<Texture2D>("Link blue/LinkRightRed"), 3) },
-                { "WalkUpRed", new Animation(Content.Load<Texture2D>("Link blue/LinkUpRed"), 3) },
-                { "WalkDownRed", new Animation(Content.Load<Texture2D>("Link blue/LinkDownRed"), 3) },
-                { "WalkLeftRed", new Animation(Content.Load<Texture2D>("Link blue/LinkLeftRed"), 3) },
+                { "WalkRight", new Animation(Content.Load<Texture2D>("Link blue/LinkRight2"), 5) },
+                { "WalkUp", new Animation(Content.Load<Texture2D>("Link blue/LinkUp2"), 5) },
+                { "WalkDown", new Animation(Content.Load<Texture2D>("Link blue/LinkDown2"), 5) },
+                { "WalkLeft", new Animation(Content.Load<Texture2D>("Link blue/LinkLeft2"), 5) },
+                { "WalkRightRed", new Animation(Content.Load<Texture2D>("Link blue/LinkRightRed2"), 5) },
+                { "WalkUpRed", new Animation(Content.Load<Texture2D>("Link blue/LinkUpRed2"), 5) },
+                { "WalkDownRed", new Animation(Content.Load<Texture2D>("Link blue/LinkDownRed2"), 5) },
+                { "WalkLeftRed", new Animation(Content.Load<Texture2D>("Link blue/LinkLeftRed2"), 5) },
                 { "HasDied", new Animation(Content.Load<Texture2D>("Link blue/LinkHasDied"), 1) },
             };
 
