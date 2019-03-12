@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Android</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/alien.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/background_jungle.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/background_sea.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/background_sky.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/background_space.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/bestscore.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/bird.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/bug.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/game_buttons.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/gameover.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/getready.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/ground_jungle.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/ground_sea.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/ground_sky.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/ground_space.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/logo.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/logo_original.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/medals.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/menu_buttons.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/new.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/numbers_large.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/numbers_small.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/pipe_bot_jungle.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/pipe_bot_sea.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/pipe_bot_sky.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/pipe_top_jungle.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/pipe_top_sea.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/pipe_top_sky.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/score_box.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Graphics/submarine.png</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Sounds/button_click.wav</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Sounds/button_hover.wav</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Sounds/flap.wav</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Sounds/flap2.wav</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Sounds/pipe_hit.wav</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Sounds/pipe_hit2.wav</File>
+    <File>C:/Users/insan/Desktop/PLATFORM - GravityChalleneger/GravityChallenger/GravityChallenger/Content/Sounds/pipe_pass.wav</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

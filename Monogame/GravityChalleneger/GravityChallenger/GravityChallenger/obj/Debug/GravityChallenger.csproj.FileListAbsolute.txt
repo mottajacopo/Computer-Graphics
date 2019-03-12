@@ -1,0 +1,45 @@
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\bin\Android\AnyCPU\Debug\GravityChallenger.dll
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\bin\Android\AnyCPU\Debug\GravityChallenger.pdb
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\bin\Android\AnyCPU\Debug\GravityChallenger.GravityChallenger.apk
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\bin\Android\AnyCPU\Debug\GravityChallenger.GravityChallenger-Signed.apk
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\bin\Android\AnyCPU\Debug\MonoGame.Framework.dll
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\bin\Android\AnyCPU\Debug\MonoGame.Framework.xml
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Debug\GravityChallenger.csprojResolveAssemblyReference.cache
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Debug\GravityChallenger.csproj.CoreCompileInputs.cache
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Debug\GravityChallenger.dll
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Debug\GravityChallenger.pdb
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Debug\android\bin\GravityChallenger.GravityChallenger.apk
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Debug\res\values\strings.xml
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Debug\res\drawable\icon.png
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Debug\res\drawable\splash.png
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Debug\res\values\styles.xml
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Debug\R.cs.flag
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Debug\uploadflags.txt
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\bin\Android\AnyCPU\Debug\GravityChallenger.dll.mdb
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Debug\android\assets\GravityChallenger.dll.mdb
+C:\Git\Monogame\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\bin\Android\AnyCPU\Debug\GravityChallenger.dll
+bin\Android\AnyCPU\Debug\Mono.Android.pdb
+bin\Android\AnyCPU\Debug\mscorlib.pdb
+bin\Android\AnyCPU\Debug\OpenTK-1.0.pdb
+bin\Android\AnyCPU\Debug\System.Core.pdb
+bin\Android\AnyCPU\Debug\System.pdb
+bin\Android\AnyCPU\Debug\System.Xml.pdb
+bin\Android\AnyCPU\Debug\System.Xml.Linq.pdb
+bin\Android\AnyCPU\Debug\System.Net.Http.pdb
+bin\Android\AnyCPU\Debug\System.Runtime.Serialization.pdb
+bin\Android\AnyCPU\Debug\System.ServiceModel.Internals.pdb
+bin\Android\AnyCPU\Debug\Mono.Security.pdb
+bin\Android\AnyCPU\Debug\System.ComponentModel.Composition.pdb
+obj\Debug\linksrc\GravityChallenger.dll.mdb
+obj\Debug\linksrc\Mono.Android.pdb
+obj\Debug\linksrc\mscorlib.pdb
+obj\Debug\linksrc\OpenTK-1.0.pdb
+obj\Debug\linksrc\System.Core.pdb
+obj\Debug\linksrc\System.pdb
+obj\Debug\linksrc\System.Xml.pdb
+obj\Debug\linksrc\System.Xml.Linq.pdb
+obj\Debug\linksrc\System.Net.Http.pdb
+obj\Debug\linksrc\System.Runtime.Serialization.pdb
+obj\Debug\linksrc\System.ServiceModel.Internals.pdb
+obj\Debug\linksrc\Mono.Security.pdb
+obj\Debug\linksrc\System.ComponentModel.Composition.pdb
