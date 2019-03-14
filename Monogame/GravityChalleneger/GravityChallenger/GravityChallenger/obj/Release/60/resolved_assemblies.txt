@@ -1,8 +1,8 @@
-C:\Users\insan\Desktop\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\GravityChallenger.dll
-C:\Users\insan\Desktop\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\Java.Interop.dll
-C:\Users\insan\Desktop\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\Mono.Android.dll
-C:\Users\insan\Desktop\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\MonoGame.Framework.dll
-C:\Users\insan\Desktop\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\mscorlib.dll
-C:\Users\insan\Desktop\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\System.Core.dll
-C:\Users\insan\Desktop\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\System.dll
-C:\Users\insan\Desktop\PLATFORM - GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\System.Runtime.Serialization.dll
+C:\Git\Computer-Graphics\Monogame\GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\GravityChallenger.dll
+C:\Git\Computer-Graphics\Monogame\GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\Java.Interop.dll
+C:\Git\Computer-Graphics\Monogame\GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\Mono.Android.dll
+C:\Git\Computer-Graphics\Monogame\GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\MonoGame.Framework.dll
+C:\Git\Computer-Graphics\Monogame\GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\mscorlib.dll
+C:\Git\Computer-Graphics\Monogame\GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\System.Core.dll
+C:\Git\Computer-Graphics\Monogame\GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\System.dll
+C:\Git\Computer-Graphics\Monogame\GravityChalleneger\GravityChallenger\GravityChallenger\obj\Release\60\android\assets\System.Runtime.Serialization.dll

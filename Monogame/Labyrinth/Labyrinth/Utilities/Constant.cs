@@ -17,7 +17,7 @@ namespace Labyrinth
         //public static Point WINDOWSOFFSET = new Point(50, 40);
         public static Point PIXELSXPOINT = new Point(40, 40); // quanti pixel voglio per ogni punto del labirinto
 
-        public static string LabyrinthPathName = @"C:\Git\Computer-Graphics\Labyrinth\Labyrinth\Content\Labirinto.txt";
+        public static string LabyrinthPathName = @"C:\Git\Computer-Graphics\Monogame\Labyrinth\Labyrinth\Content\Labirinto.txt";
 
         public static Texture2D brickWall, brickGrass, brickStart, brickEnd, brickLava, brickDiamond, brickEnd2;
         public static Texture2D Grave;

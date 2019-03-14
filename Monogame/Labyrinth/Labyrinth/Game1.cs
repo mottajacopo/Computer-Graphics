@@ -24,18 +24,9 @@ namespace Labyrinth
         bool check = false; // need for death count check
 
         private float timer = 1.5f;         //timer for bullets
-        private float timer2 = 0;
         const float TIMER = 1.5f;
 
         private Random r = new Random();
-
-        public enum GameStates
-        {
-            Menu,
-            Playing,
-        }
-
-        private GameStates _gameState;
 
         public Game1()
         {
@@ -176,7 +167,6 @@ namespace Labyrinth
         protected override void Update(GameTime gameTime)
         {
             float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
-            timer2 += elapsed;
             timer -= elapsed;
 
             if (timer < 0)
@@ -233,43 +223,37 @@ namespace Labyrinth
 
         protected override void Draw(GameTime gameTime)
         {
-            if (_gameState == GameStates.Menu)
+            GraphicsDevice.Clear(Color.CornflowerBlue);
+
+            spriteBatch.Begin();
+
+            foreach (var map in V.mapList)
+                map.Draw(spriteBatch);
+
+            foreach (var cannon in V.cannonList)
+                cannon.Draw(spriteBatch);
+
+            foreach (var player in V.playerList)
+                player.Draw(spriteBatch);
+
+            foreach (var bullet in V.bulletsList)
+                bullet.Draw(spriteBatch);
+
+            if (V.spriteList.Count >0)  // draw sprite different from player ( es grave )
             {
-
+                foreach (var sprite in V.spriteList)
+                    sprite.Draw(spriteBatch);
             }
-            if (_gameState == GameStates.Playing)
-            {
-                GraphicsDevice.Clear(Color.CornflowerBlue);
 
-                spriteBatch.Begin();
+            spriteBatch.DrawString(font, string.Format("Time: {0}", timer.ToString("n2")), new Vector2(10, 5), Color.White);
+            spriteBatch.DrawString(font, string.Format("Score: {0}", V.score), new Vector2(10, 30), Color.White);
+            spriteBatch.DrawString(font, string.Format("Death count: {0}", V.deathCount), new Vector2(10, 55), Color.White);  // death counter
+            spriteBatch.DrawString(font, string.Format("Health: {0}", V.playerHealth), new Vector2(10, 80), Color.White);
 
-                foreach (var map in V.mapList)
-                    map.Draw(spriteBatch);
+            spriteBatch.End();
 
-                foreach (var cannon in V.cannonList)
-                    cannon.Draw(spriteBatch);
+            base.Draw(gameTime);
 
-                foreach (var player in V.playerList)
-                    player.Draw(spriteBatch);
-
-                foreach (var bullet in V.bulletsList)
-                    bullet.Draw(spriteBatch);
-
-                if (V.spriteList.Count > 0)  // draw sprite different from player ( es grave )
-                {
-                    foreach (var sprite in V.spriteList)
-                        sprite.Draw(spriteBatch);
-                }
-
-                spriteBatch.DrawString(font, string.Format("Time: {0}", timer2.ToString("n2")), new Vector2(10, 5), Color.White);
-                spriteBatch.DrawString(font, string.Format("Score: {0}", V.score), new Vector2(10, 30), Color.White);
-                spriteBatch.DrawString(font, string.Format("Death count: {0}", V.deathCount), new Vector2(10, 55), Color.White);  // death counter
-                spriteBatch.DrawString(font, string.Format("Health: {0}", V.playerHealth), new Vector2(10, 80), Color.White);
-
-                spriteBatch.End();
-
-                base.Draw(gameTime);
-            }
         }
     }
 }
