@@ -39,6 +39,8 @@ namespace Labyrinth
 
         public static int score;
 
+        public static bool win;
+
         public static Rectangle labyrinthPixels;         //prof
         public static Random random = new Random();
 

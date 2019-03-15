@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/Prof/SpriteFont.spritefont</SourceFile>
-  <SourceTime>2018-10-24T12:01:20+02:00</SourceTime>
-  <DestFile>C:/Git/Computer-Graphics/Labyrinth/Labyrinth/Content/bin/Windows/Prof/SpriteFont.xnb</DestFile>
-  <DestTime>2018-10-24T18:59:58.2964616+02:00</DestTime>
+  <SourceFile>C:/Users/Jacopo/Desktop/Labyrinth/Labyrinth/Content/Prof/SpriteFont.spritefont</SourceFile>
+  <SourceTime>2018-10-28T12:41:24+01:00</SourceTime>
+  <DestFile>C:/Users/Jacopo/Desktop/Labyrinth/Labyrinth/Content/bin/Windows/Prof/SpriteFont.xnb</DestFile>
+  <DestTime>2019-03-15T21:06:55.2736386+01:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
-  <ImporterTime>2018-09-23T23:55:52+02:00</ImporterTime>
+  <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>
-  <ProcessorTime>2018-09-23T23:55:52+02:00</ProcessorTime>
+  <ProcessorTime>2018-12-08T17:35:54+01:00</ProcessorTime>
   <Parameters>
     <Key>PremultiplyAlpha</Key>
     <Value>True</Value>

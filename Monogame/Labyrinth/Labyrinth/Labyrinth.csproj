@@ -41,6 +41,8 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Component.cs" />
+    <Compile Include="Controls\Button.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Manager\LabyrinthManager.cs" />
     <Compile Include="Manager\AnimationManager.cs" />

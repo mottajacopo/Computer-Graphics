@@ -161,6 +161,18 @@ namespace Labyrinth.Sprites
                         V.animationRight = "WalkRight";
                     }
                 }
+
+                if (map.ID == 'E' || map.ID == 'F')
+                {
+                    if (IsTouchingLeft(map) || IsTouchingRight(map) || IsTouchingTop(map) || IsTouchingBottom(map))
+                    {
+                        V.animationDown = "WalkDown";
+                        V.animationUp = "WalkUp";
+                        V.animationLeft = "WalkLeft";
+                        V.animationRight = "WalkRight";
+                        V.win = true;
+                    }
+                }
             }
 
             SetAnimations(V.animationUp, V.animationDown, V.animationLeft, V.animationRight, V.animationDied);

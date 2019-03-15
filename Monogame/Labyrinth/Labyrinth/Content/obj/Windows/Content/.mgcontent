@@ -5,6 +5,7 @@
   <Config />
   <SourceFiles>
     <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/Bullet.png</File>
+    <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/Button.png</File>
     <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/Cannon/cannonDown.png</File>
     <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/Cannon/cannonLeft.png</File>
     <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/Cannon/cannonLeftDown.png</File>
@@ -13,6 +14,7 @@
     <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/Cannon/cannonRightDown.png</File>
     <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/Cannon/cannonRightUp.png</File>
     <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/Cannon/cannonUp.png</File>
+    <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/Cover.png</File>
     <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/diamante.png</File>
     <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/diamante2.png</File>
     <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/door.png</File>
@@ -62,9 +64,13 @@
     <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/Prof/explosion.wav</File>
     <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/Prof/newBullet.wav</File>
     <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/Prof/SpriteFont.spritefont</File>
+    <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/win.png</File>
     <File>C:/Git/Computer-Graphics/Monogame/Labyrinth/Labyrinth/Content/wood.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

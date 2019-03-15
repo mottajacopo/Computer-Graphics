@@ -440,3 +440,105 @@ C:\Git\Computer-Graphics\Monogame\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.cs
 C:\Git\Computer-Graphics\Monogame\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csproj.CopyComplete
 C:\Git\Computer-Graphics\Monogame\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.exe
 C:\Git\Computer-Graphics\Monogame\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.pdb
+C:\Git\Computer-Graphics\Monogame\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\win.xnb
+C:\Git\Computer-Graphics\Monogame\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Button.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaHasDied3.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkBurndown.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkBurnLeft.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkBurnRight.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkBurnUp.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkWalkDown.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkWalkLeft.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkWalkRight.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkWalkUp.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon10.30.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon2.30.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon4.30.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannon7.30.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Prof\background.wma
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Prof\background.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Prof\Bullet.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Prof\explosion.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Prof\newBullet.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Prof\SpriteFont.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\Rip.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaDown.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaDownRed.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaHasDied.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaLeft.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaLeftRed.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaRight.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaRightRed.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaUp.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Player\ZeldaUpRed.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Fonts\Font.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkAttack.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkAttackDown.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkAttackLeft.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkAttackRight.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkAttackUp.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkBurn.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkDown.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkDown2.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkDownRed.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkDownRed2.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkHasDied.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkLeft.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkLeft2.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkLeftRed.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkLeftRed2.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkRight.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkRight2.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkRightRed.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkRightRed2.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkSkeleton.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkUp.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkUp2.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkUpRed.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkUpRed2.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Link blue\LinkWalk.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonDown.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonLeft.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonLeftDown.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonLeftUp.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonRight.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonRightDown.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonRightUp.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cannon\cannonUp.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Bullet.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Button.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\diamante.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\diamante2.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\door.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\door2.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\grass.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\heart.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\lava.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\mossy.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\win.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\wood.xnb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Labyrinth.exe
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Labyrinth.pdb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csprojAssemblyReference.cache
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csproj.CoreCompileInputs.cache
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.csproj.CopyComplete
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.exe
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\obj\x86\Debug\Labyrinth.pdb
+C:\Users\Jacopo\Desktop\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cover.xnb
+C:\Git\Computer-Graphics\Monogame\Labyrinth\Labyrinth\bin\Windows\x86\Debug\Content\Cover.xnb
